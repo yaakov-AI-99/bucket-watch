@@ -23,6 +23,8 @@
   --ok:#5fd39a; --ok-soft:#173528; --warn:#ffb54d; --warn-soft:#3a2b14; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.fullscreen{display:block;text-align:center;padding:10px 16px;background:var(--ink);color:var(--bg);font:600 14px var(--body);text-decoration:none}
+.fullscreen:focus-visible{outline:3px solid var(--butter);outline-offset:-3px}
 .band{height:14px;background:repeating-linear-gradient(90deg,var(--stripe) 0 22px,var(--surface) 22px 44px);border-bottom:1px solid var(--line)}
 .wrap{max-width:1040px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
@@ -132,6 +134,7 @@ h3.minor + .sub{margin-top:-6px}
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
 </head><body>
 
+<a class="fullscreen" id="fullscreen" href="https://yaakov-ai-99.github.io/bucket-watch/" target="_blank" rel="noopener" hidden>Open full screen ↗</a>
 <div class="band" aria-hidden="true"></div>
 <div class="wrap">
   <header>
@@ -210,6 +213,7 @@ h3.minor + .sub{margin-top:-6px}
 </div>
 
 <script>
+try{ if(window.self!==window.top) document.getElementById("fullscreen").hidden=false; }catch(e){ document.getElementById("fullscreen").hidden=false; }
 const WORK = {lat:40.6415, lng:-73.6990, addr:"1744 Rockaway Ave, Hewlett, NY 11557"};
 const TODAY = new Date();
 

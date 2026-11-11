@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "47 11 * * *"   # 6:47 AM Eastern (standard time), every day
   workflow_dispatch:         # lets you run it by hand from the Actions tab
+  push:                      # also runs when the tracker or this workflow changes
+    branches: [main]
+    paths:
+      - tracker.py
+      - .github/workflows/update-data.yml
 
 permissions:
   contents: write
