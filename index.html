@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bucket Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a concession-stand board. Striped popcorn-box band on top, movies as ticket-stub rows ranked by buzz, theater list at the bottom. */
+:root{
+  --bg:#f5f6fa; --surface:#ffffff; --ink:#18213a; --muted:#5c6684; --line:#dde1ec;
+  --butter:#f4b400; --butter-ink:#3a2a00; --stripe:#c8202f; --stripe-soft:#fbe3e5;
+  --ok:#1d7a4a; --ok-soft:#dff3e8; --warn:#9a5b00; --warn-soft:#fdf0d9;
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1424; --surface:#182036; --ink:#eef0f7; --muted:#a2abc6; --line:#2a3452;
+  --butter:#ffc93c; --butter-ink:#2b1f00; --stripe:#ff5a67; --stripe-soft:#3a1d27;
+  --ok:#5fd39a; --ok-soft:#173528; --warn:#ffb54d; --warn-soft:#3a2b14; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1424; --surface:#182036; --ink:#eef0f7; --muted:#a2abc6; --line:#2a3452;
+  --butter:#ffc93c; --butter-ink:#2b1f00; --stripe:#ff5a67; --stripe-soft:#3a1d27;
+  --ok:#5fd39a; --ok-soft:#173528; --warn:#ffb54d; --warn-soft:#3a2b14; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.band{height:14px;background:repeating-linear-gradient(90deg,var(--stripe) 0 22px,var(--surface) 22px 44px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1040px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,6vw,3.3rem);line-height:1;margin:0;letter-spacing:-.02em}
+h1 span{background:var(--butter);color:var(--butter-ink);padding:0 .18em;border-radius:6px}
+.lede{color:var(--muted);max-width:60ch;margin:10px 0 0}
+.base{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;min-width:0}
+.label{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.base strong{display:block;font-size:15px}
+.base small{color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:28px 0 8px}
+.chip{font:600 13px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,.star:focus-visible,a:focus-visible{outline:3px solid var(--butter);outline-offset:2px}
+.updated{margin-left:auto;font-size:12px;color:var(--muted)}
+h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:40px 0 4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 16px;font-size:14px}
+.movies{display:grid;gap:18px}
+.movie{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.movie-main{padding:20px 22px;min-width:0}
+.top{display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.rank{font:800 13px var(--mono);color:var(--muted)}
+.movie h3{font-family:var(--display);font-size:1.45rem;line-height:1.15;margin:2px 0 6px;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+.buzz{display:inline-flex;gap:3px;vertical-align:middle}
+.buzz i{width:9px;height:14px;border-radius:2px;background:var(--line)}
+.buzz i.on{background:var(--stripe)}
+.why{font-size:13px;color:var(--muted);margin:8px 0 14px}
+.star{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:8px;padding:6px 10px;font:600 12px var(--body);cursor:pointer;white-space:nowrap}
+.star[aria-pressed="true"]{background:var(--butter);color:var(--butter-ink);border-color:var(--butter)}
+.buckets{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.buckets li{display:grid;grid-template-columns:86px minmax(0,1fr);gap:10px;font-size:14px}
+.tag{font:600 11px var(--body);letter-spacing:.05em;text-transform:uppercase;border-radius:6px;padding:3px 6px;text-align:center;align-self:start;border:1px solid var(--line)}
+.tag.AMC{background:var(--stripe-soft);color:var(--stripe);border-color:transparent}
+.tag.Regal{background:var(--warn-soft);color:var(--warn);border-color:transparent}
+.tag.Cinemark{background:var(--ok-soft);color:var(--ok);border-color:transparent}
+.tag.Fandango,.tag.All{color:var(--muted)}
+.buckets small{display:block;color:var(--muted);font-size:12px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* ticket stub */
+.stub{position:relative;background:var(--bg);border-left:2px dashed var(--line);padding:20px 22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.stub::before,.stub::after{content:"";position:absolute;left:-11px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:1px solid var(--line)}
+.stub::before{top:-11px}.stub::after{bottom:-11px}
+.night{font-family:var(--display);font-weight:800;font-size:1.15rem;line-height:1.2}
+.countdown{display:inline-block;font:500 12px var(--mono);background:var(--butter);color:var(--butter-ink);padding:2px 8px;border-radius:6px}
+.countdown.past{background:var(--line);color:var(--muted)}
+.pick{border-top:1px solid var(--line);padding-top:10px;font-size:14px}
+.pick:first-of-type{border-top:0;padding-top:0}
+.pick a{color:var(--ink);font-weight:600}
+.pick .links{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px;margin-top:4px}
+.pick .links a{color:var(--stripe);font-weight:600;text-decoration:none}
+.pick .links a:hover{text-decoration:underline}
+.none{font-size:13px;color:var(--muted)}
+.empty{padding:28px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+/* theaters */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td a{color:var(--stripe);font-weight:600;text-decoration:none}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14px;min-width:0}
+.note h4{margin:0 0 4px;font-size:14px}
+.note p{margin:0;color:var(--muted)}
+.flips{display:grid;gap:12px}
+.flip{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.flip .n{font:800 1.6rem var(--display);color:var(--stripe);line-height:1}
+.flip h4{margin:0;font-size:1.02rem}
+.flip p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.flip .nums{text-align:right;font-size:13px;color:var(--muted);white-space:nowrap}
+.flip .nums b{display:block;font:500 1.05rem var(--mono);color:var(--ink)}
+.flip .nums .net{color:var(--ok)}
+.flip .nums .net.neg{color:var(--warn)}
+.verdict{display:inline-block;font:600 11px var(--body);letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:middle}
+.verdict.buy{background:var(--ok-soft);color:var(--ok)}
+.verdict.maybe{background:var(--warn-soft);color:var(--warn)}
+.verdict.skip{background:var(--line);color:var(--muted)}
+.flip a{color:var(--stripe);font-weight:600;font-size:13px;text-decoration:none}
+h3.minor{font-family:var(--display);font-size:1.1rem;margin:28px 0 10px}
+h3.minor + .sub{margin-top:-6px}
+.livebar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:13px;color:var(--muted);margin:0 0 12px}
+.livebar .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:6px}
+.stats{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:6px}
+.stats b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.gap{color:var(--warn);font-weight:600}
+.conf{font:600 11px var(--body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.trends{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.trend{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.trend .q{font-size:13px;font-weight:600}
+.trend .v{display:flex;gap:8px;align-items:baseline;font:500 1.1rem var(--mono);margin:2px 0 6px}
+.trend .v small{font-size:12px}
+.up{color:var(--ok)} .down{color:var(--warn)}
+.trend svg{width:100%;height:40px;display:block}
+@media (max-width:620px){.flip{grid-template-columns:32px minmax(0,1fr)}.flip .nums{grid-column:2;text-align:left}}
+.sources{font-size:12px;color:var(--muted);margin-top:28px}
+.sources a{color:var(--muted)}
+@media (max-width:760px){
+  .movie{grid-template-columns:1fr}
+  .stub{border-left:0;border-top:2px dashed var(--line)}
+  .stub::before{top:-11px;left:-11px}.stub::after{top:-11px;bottom:auto;left:auto;right:-11px}
+  .updated{margin-left:0;width:100%}
+}
+@media (prefers-reduced-motion:no-preference){.chip,.star{transition:background .15s,color .15s}}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+
+<div class="band" aria-hidden="true"></div>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Bucket <span>Watch</span></h1>
+      <p class="lede">The collectible popcorn buckets getting the most attention, each movie's opening-night previews, and the closest theater to work that sells each chain's bucket.</p>
+    </div>
+    <div class="base">
+      <div class="label">Distances measured from work</div>
+      <strong>1744 Rockaway Ave</strong>
+      <small>Hewlett, NY 11557</small>
+    </div>
+  </header>
+
+  <div class="controls" role="group" aria-label="Filter by chain">
+    <button class="chip" id="f-all" data-chain="all" aria-pressed="true">All chains</button>
+    <button class="chip" id="f-amc" data-chain="AMC" aria-pressed="false">AMC</button>
+    <button class="chip" id="f-regal" data-chain="Regal" aria-pressed="false">Regal</button>
+    <button class="chip" id="f-cinemark" data-chain="Cinemark" aria-pressed="false">Cinemark</button>
+    <button class="chip" id="f-want" data-chain="want" aria-pressed="false">★ Want list</button>
+    <span class="updated">Bucket details can change before release.</span>
+  </div>
+
+  <h2>Coming up</h2>
+  <p class="sub">Ranked by buzz: how many chains carry a bucket, how much coverage it got, and how past buckets for the series sold. The buzz rating is my estimate, not an official number.</p>
+  <div class="movies" id="upcoming"></div>
+
+  <h2>Already in theaters</h2>
+  <p class="sub">These opened recently. Stock is first come, first served, so call the theater before you drive over.</p>
+  <div class="movies" id="current"></div>
+
+  <h2 id="resale">Resale outlook</h2>
+  <p class="sub">Buckets ranked by expected profit each, from live eBay listings. Where buckets have actually sold, the sell price comes from those sales. Where they haven't yet, it's 80% of the typical asking price, since asking prices run higher than what sells. What you pay at the theater is my estimate until prices are announced.</p>
+  <div class="livebar" id="live-status" hidden></div>
+  <div class="flips" id="flips"></div>
+
+  <div id="live-extra" hidden>
+    <h3 class="minor">Search interest on Google</h3>
+    <p class="sub">Google Trends, last 45 days. Rising interest before a release usually means stronger resale demand on opening weekend.</p>
+    <div class="trends" id="trends"></div>
+
+    <h3 class="minor">Most-wanted buckets on eBay right now</h3>
+    <p class="sub">Popcorn bucket listings with the most confirmed sales and watchers, across every movie.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Listing</th><th>Price</th><th>Sold</th><th>Watching</th></tr></thead>
+      <tbody id="hot"></tbody>
+    </table></div>
+  </div>
+
+  <h3 class="minor">What past buckets resold for</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Bucket</th><th>Retail</th><th>Resale</th><th>Return</th><th>Data type</th></tr></thead>
+    <tbody id="comps"></tbody>
+  </table></div>
+
+  <div class="notes">
+    <div class="note"><h4>Sell in the first 4 days</h4><p>Resale prices peak on opening weekend and then drop. Dune: Part Two buckets sold for an average of $64 in their first four days, even though listings were asking up to $846. List the same night you buy.</p></div>
+    <div class="note"><h4>Take out fees and shipping</h4><p>eBay keeps about 13% of the sale price, and shipping a bulky bucket usually costs $15–25. The estimated profit figures above already subtract both.</p></div>
+    <div class="note"><h4>Avoid buckets sold everywhere</h4><p>A bucket sold at every chain and online stays in supply. Exclusives from one chain, sold only in theaters, hold their value best. Tins usually resell for less than sculpted 3D buckets.</p></div>
+  </div>
+
+  <h2>Theaters near work</h2>
+  <p class="sub">Straight-line distance from 1744 Rockaway Ave. Driving distance is usually about 1.3 times longer. Theaters are only listed if I confirmed they're open.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Theater</th><th>Chain</th><th>Address</th><th>Distance</th><th></th></tr></thead>
+    <tbody id="theaters"></tbody>
+  </table></div>
+
+  <div class="notes">
+    <div class="note"><h4>No Cinemark on Long Island</h4><p>None of the Cinemark theaters I found are within driving distance. To get a Cinemark bucket, buy it as a ticket bundle from the Fandango Fan Store, or pick one of the AMC or Regal versions instead.</p></div>
+    <div class="note"><h4>Go the day before opening</h4><p>AMC and Regal usually start selling buckets on the Thursday preview night, the day before the Friday opening. The most popular ones sell out that night.</p></div>
+    <div class="note"><h4>Showtimes</h4><p>Preview times are posted a few weeks ahead of opening. The "Showtimes" links search for the latest times at that exact theater. Evening previews usually start between 6 and 7 PM.</p></div>
+  </div>
+
+  <p class="sources">Sources: <a href="https://www.comicbasics.com/every-avengers-doomsday-theater-merch-item-revealed-at-amc-regal-and-cinemark/">ComicBasics</a> · <a href="https://wdwnt.com/2026/10/amc-theatres-reveals-avengers-doomsday-popcorn-bucket-collectibles/">WDW News Today</a> · <a href="https://attractionsmagazine.com/dune-part-three-popcorn-bucketsk-collectibles/">Attractions Magazine</a> · <a href="https://hollywoodlife.com/2026/10/29/dune-3-popcorn-bucket-cost/">HollywoodLife</a> · <a href="https://www.fantasylandnews.com/2026/10/28/hunger-games-sunrise-on-the-reaping-popcorn-buckets/">Fantasy Land News</a> · <a href="https://www.moneytalksnews.com/from-dune-to-avengers-doomsday-see-collectibles-coming-to-theaters/">Money Talks News</a> · <a href="https://pixeltwelve.com/articles/the-cat-in-the-hat-fishbowl-popcorn-bucket-regal">Pixel Twelve</a> · <a href="https://www.yahoo.com/entertainment/movies/articles/cat-hat-popcorn-buckets-absolutely-222700853.html">Yahoo</a> · <a href="https://cinematreasures.org/theaters/4660">Cinema Treasures</a> · <a href="https://gizmodo.com/dune-sandworm-popcorn-bucket-ebay-expensive-resellers-1851351193">Gizmodo</a> · <a href="https://www.resell.ing/blog/godzilla-minus-zero-popcorn-bucket-price">resell.ing</a> · <a href="https://resellcalendar.com/news/news/avatar-fire-and-ash-banshee-popcorn-bucket-reseller/">ResellCalendar</a> · <a href="https://hauntedattractionnetwork.com/resident-evil-popcorn-bucket-2026/">Haunted Attraction Network</a> · <a href="https://www.ebay.com/itm/206633526054">eBay presale listing</a> · <a href="https://www.yahoo.com/entertainment/movies/article/from-dune-to-godzilla-movie-popcorn-buckets-are-getting-bigger-and-stranger--thats-kind-of-the-point-194536614.html">Yahoo</a></p>
+</div>
+
+<script>
+const WORK = {lat:40.6415, lng:-73.6990, addr:"1744 Rockaway Ave, Hewlett, NY 11557"};
+const TODAY = new Date();
+
+const THEATERS = [
+  {name:"Regal Lynbrook", chain:"Regal", addr:"321 Merrick Rd, Lynbrook, NY 11563", lat:40.6560, lng:-73.6720, note:"Closest theater. Recliners."},
+  {name:"AMC Fantasy 5", chain:"AMC", addr:"18 N Park Ave, Rockville Centre, NY 11570", lat:40.6585, lng:-73.6418, note:"Closest AMC. Only 5 screens, so its bucket stock is small."},
+  {name:"AMC Roosevelt Field 8", chain:"AMC", addr:"630 Old Country Rd, Garden City, NY 11530", lat:40.7384, lng:-73.6131, note:"Backup AMC if Fantasy 5 sells out."},
+  {name:"AMC Raceway 10", chain:"AMC", addr:"1025 Corporate Dr, Westbury, NY 11590", lat:40.7470, lng:-73.5860, note:""},
+  {name:"Regal Westbury", chain:"Regal", addr:"7000 Brush Hollow Rd, Westbury, NY 11590", lat:40.7660, lng:-73.5520, note:"Large IMAX theater. Usually gets every Regal exclusive."}
+];
+
+// status: "upcoming" | "current"
+const MOVIES = [
+  {id:"doomsday", title:"Avengers: Doomsday", status:"upcoming", open:"2026-12-18", preview:"2026-12-17", previewLabel:"Thu Dec 17 · evening previews",
+   buzz:5, why:"All five big chains made a Doctor Doom statue bucket, AMC and Regal each have exclusives, and Fandango's bucket-and-ticket bundle is already selling for $79.99.",
+   buckets:[
+    {chain:"All", name:"Doctor Doom statue bucket", detail:"Sold at AMC, Regal, Cinemark, Harkins and Marcus. AMC's comes with a large popcorn."},
+    {chain:"AMC", name:"Sentinel Head bucket (exclusive)", detail:"Comes with popcorn. Also on sale: a Team Icon collectible in 3 designs (A, X and Doom) and a Bottle of Doom drink.", sale:"2026-12-17"},
+    {chain:"Regal", name:"Doom's Throne bucket (exclusive)", detail:"Also on sale: a Sentinel-head drink vessel.", sale:"2026-12-17"},
+    {chain:"Cinemark", name:"Doctor Doom mask bucket with glowing LED eyes", detail:"Comes with a Doom throne cup. Sale date not announced yet."},
+    {chain:"Fandango", name:"Doom statue bucket + advance ticket", detail:"$79.99, on sale now online."}
+   ]},
+  {id:"dune3", title:"Dune: Part Three", status:"upcoming", open:"2026-12-18", preview:"2026-12-17", previewLabel:"Thu Dec 17 · evening previews",
+   buzz:5, why:"The Part Two sandworm bucket went viral in 2024. AMC's new two-headed version is the follow-up, and all three big chains have a Dune bucket.",
+   buckets:[
+    {chain:"AMC", name:"Double Sandworm bucket (exclusive)", detail:"A sandworm with two mouths. Also on sale: a Sandworm Thumper drink container. Price not announced yet. The Part Two bucket was $24.99 with popcorn.", sale:"2026-12-17"},
+    {chain:"Regal", name:"Spacing Guild Navigator bucket (exclusive)", detail:"Comes with a large popcorn. Regal also has a combo, a cup, a throw blanket and a plush."},
+    {chain:"Cinemark", name:"Copper Sandworm bucket", detail:"\"Coming soon\" to select locations. No price or date yet."}
+   ]},
+  {id:"hunger", title:"The Hunger Games: Sunrise on the Reaping", status:"upcoming", open:"2026-11-20", preview:"2026-11-19", previewLabel:"Thu Nov 19 · evening previews",
+   buzz:4, why:"This is the next bucket to go on sale. Regal's book-shaped tin starts selling Wednesday, November 18, two days before the movie opens.",
+   buckets:[
+    {chain:"Regal", name:"Book-shaped popcorn tin (exclusive)", detail:"Only at Regal.", sale:"2026-11-18"},
+    {chain:"Cinemark", name:"$40 Super Ticket", detail:"Includes a 130 oz popcorn tin, a pin, a drink and a ticket."},
+    {chain:"AMC", name:"Bucket with keychain", detail:"AMC also has Haymitch-themed tumblers. Price not announced yet."}
+   ]},
+  {id:"hexed", title:"Hexed", status:"upcoming", open:"2026-11-25", preview:"2026-11-24", previewLabel:"Tue Nov 24 · likely evening previews",
+   buzz:3, why:"Disney's Thanksgiving animated movie. It has a Regal bucket and a Fandango bundle, but few other chains have announced anything.",
+   buckets:[
+    {chain:"Regal", name:"Hexed bucket", detail:"Regal also has a collectible combo with 1 of 3 drink toppers."},
+    {chain:"Fandango", name:"Ticket + collectible bundle", detail:"$49.99 online."}
+   ]},
+  {id:"cat", title:"The Cat in the Hat", status:"current", open:"2026-11-06", preview:"2026-11-05", previewLabel:"Opened Fri Nov 6",
+   buzz:4, why:"Regal's clear fishbowl bucket with Fish sitting on the rim was the most-shared bucket of early November.",
+   buckets:[
+    {chain:"Regal", name:"Clear Fishbowl bucket with Fish on the rim", detail:"On sale since Nov 5."},
+    {chain:"AMC", name:"Cat in the Hat bucket and Fishbowl bucket", detail:"AMC also has a Thing-themed blanket and cup, plus blind-box plush."},
+    {chain:"Cinemark", name:"Fishbowl bucket", detail:"Cinemark also has a Thing 3 cup."},
+    {chain:"Fandango", name:"Ticket + Fishbowl bucket", detail:"$49.99 online."}
+   ]},
+  {id:"godzilla", title:"Godzilla Minus Zero", status:"current", open:"2026-11-06", preview:"2026-11-05", previewLabel:"Opened Fri Nov 6",
+   buzz:3, why:"A large Godzilla bucket was reported (Cinemark is mentioned), but I couldn't confirm which chains carry it.",
+   buckets:[
+    {chain:"Cinemark", name:"Godzilla bucket", detail:"Reported but not confirmed. Ask the theater before you go."}
+   ]}
+];
+
+// Upcoming flips. retail/resale are estimates (low-high) unless noted.
+const FLIPS = [
+  {item:"Dune: Part Three: Double Sandworm bucket", where:"AMC exclusive · AMC Fantasy 5 · Dec 17", retail:[25,35], resale:[60,110], verdict:"buy",
+   why:"This is the best bet. It follows the Part Two sandworm bucket, which averaged $64 on a $24.99 price in its first four days. It's sold only at AMC and should be priced low. Fantasy 5 has only 5 screens, so get there when it opens on Thursday.", q:"dune part three double sandworm popcorn bucket"},
+  {item:"Avengers: Doomsday: Doom's Throne bucket", where:"Regal exclusive · Regal Lynbrook · Dec 17", retail:[30,50], resale:[80,130], verdict:"buy",
+   why:"Only Regal sells it, and Regal Lynbrook is the closest theater to work. Early presale listings for throne-style Doom buckets are asking about $90.", q:"doom's throne popcorn bucket regal"},
+  {item:"Avengers: Doomsday: Sentinel Head bucket", where:"AMC exclusive · AMC Fantasy 5 · Dec 17", retail:[30,45], resale:[60,100], verdict:"maybe",
+   why:"It's exclusive to AMC, but the Doom bucket gets most of the attention. You can buy this one at the same stop as the Dune bucket.", q:"avengers doomsday sentinel head popcorn bucket"},
+  {item:"Avengers: Doomsday: Doctor Doom statue bucket", where:"Every chain + Fandango online", retail:[60,80], resale:[70,120], verdict:"skip",
+   why:"Presale listings ask $155–200, but those are asking prices. Five chains carry it and Fandango sells it online, so supply will be large. After fees there's little margin.", q:"doctor doom statue popcorn bucket"},
+  {item:"Hunger Games: Book-shaped tin", where:"Regal exclusive · Regal Lynbrook · Nov 18", retail:[25,40], resale:[35,60], verdict:"skip",
+   why:"It goes on sale soonest, but tins historically resell for much less than sculpted buckets. Buy it only if you want to keep it.", q:"hunger games sunrise on the reaping popcorn tin regal"},
+  {item:"Hexed: Regal bucket", where:"Regal · Nov 24", retail:[20,30], resale:[25,45], verdict:"skip",
+   why:"There's little buzz and no resale history to compare it with.", q:"hexed popcorn bucket"}
+];
+const COMPS = [
+  {b:"Dune: Part Two sandworm (AMC, 2024)", r:"$24.99", s:"$64 avg (76 sales, first 4 days)", x:"2.6×", t:"Sold"},
+  {b:"Godzilla Minus Zero (AMC, Nov 2026)", r:"n/a", s:"$150–250 sealed, Nov 6–7", x:"high", t:"Sold (reported)"},
+  {b:"Avatar: Fire and Ash Banshee (Regal/Cinemark)", r:"$80", s:"~$120 avg", x:"1.5×", t:"Reported avg"},
+  {b:"Top Gun 40th helmet", r:"$35", s:"~$70", x:"2×", t:"Reported"},
+  {b:"Darth Vader, Revenge of the Sith (AMC)", r:"~$25–35", s:"$50–70", x:"~2×", t:"Reported"},
+  {b:"Resident Evil (AMC, 2026)", r:"$24.99", s:"$40–250", x:"volatile", t:"Mostly asking"},
+  {b:"Cinemark F1 helmet", r:"~$16", s:"$75–150", x:"5×+", t:"Asking"}
+];
+const FEE = 0.13, SHIP = 18;
+const net = (sell,buy) => Math.round(sell*(1-FEE) - SHIP - buy);
+const sold = q => `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(q)}&LH_Sold=1&LH_Complete=1`;
+const VLABEL = {buy:"Best bet", maybe:"Maybe", skip:"Keep, don't flip"};
+
+const $ = s => document.querySelector(s);
+let filter = "all";
+let want = new Set();
+try { want = new Set(JSON.parse(localStorage.getItem("bw-want") || "[]")); } catch(e) {}
+function saveWant(){ try { localStorage.setItem("bw-want", JSON.stringify([...want])); } catch(e) {} }
+
+function miles(a,b){
+  const R=3958.8, r=x=>x*Math.PI/180;
+  const dLat=r(b.lat-a.lat), dLng=r(b.lng-a.lng);
+  const h=Math.sin(dLat/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dLng/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+THEATERS.forEach(t=>t.mi=miles(WORK,t));
+THEATERS.sort((a,b)=>a.mi-b.mi);
+
+const fmt = d => new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});
+function daysUntil(d){ return Math.round((new Date(d+"T12:00:00")-TODAY)/864e5); }
+function countdown(d,label){
+  const n=daysUntil(d);
+  if(n<0) return `<span class="countdown past">${label} started ${fmt(d)}</span>`;
+  if(n===0) return `<span class="countdown">${label} today</span>`;
+  return `<span class="countdown">${label} in ${n} day${n===1?"":"s"}</span>`;
+}
+const enc = encodeURIComponent;
+const dirs = t => `https://www.google.com/maps/dir/?api=1&origin=${enc(WORK.addr)}&destination=${enc(t.name+", "+t.addr)}`;
+const times = (m,t) => `https://www.google.com/search?q=${enc(m.title+" showtimes "+t.name+" "+t.addr.split(",")[1])}`;
+
+function chainsOf(m){
+  const s=new Set();
+  m.buckets.forEach(b=>{ if(b.chain==="All"){["AMC","Regal","Cinemark"].forEach(c=>s.add(c));} else if(b.chain!=="Fandango") s.add(b.chain); });
+  return [...s];
+}
+
+function plan(m){
+  const chains = chainsOf(m).filter(c=>filter==="all"||filter==="want"||c===filter);
+  return chains.map(c=>{
+    const t = THEATERS.find(x=>x.chain===c);
+    if(!t) return `<div class="pick"><span class="tag ${c}">${c}</span> <span class="none">No ${c} theater nearby. Buy the Fandango bundle online.</span></div>`;
+    return `<div class="pick"><span class="tag ${c}">${c}</span> <a href="${dirs(t)}" target="_blank" rel="noopener">${t.name}</a>
+      <div class="none">${t.addr} · <span class="mono">${t.mi.toFixed(1)} mi</span> away</div>
+      <div class="links"><a href="${times(m,t)}" target="_blank" rel="noopener">Showtimes</a><a href="${dirs(t)}" target="_blank" rel="noopener">Directions from work</a></div></div>`;
+  }).join("");
+}
+
+function card(m,i){
+  const bs = m.buckets.filter(b=>filter==="all"||filter==="want"||b.chain===filter||b.chain==="All");
+  const sale = m.buckets.map(b=>b.sale).filter(Boolean).sort()[0];
+  const on = want.has(m.id);
+  return `<article class="movie">
+    <div class="movie-main">
+      <div class="top"><div>
+        <div class="rank">${m.status==="upcoming"?"#"+(i+1)+" by buzz":"In theaters"}</div>
+        <h3>${m.title}</h3></div>
+        <button class="star" data-id="${m.id}" id="want-${m.id}" aria-pressed="${on}">${on?"★ Want":"☆ Want"}</button>
+      </div>
+      <div class="meta"><span>Opens <b>${fmt(m.open)}</b></span>
+        <span>Buzz <span class="buzz" aria-label="${m.buzz} out of 5">${[1,2,3,4,5].map(n=>`<i class="${n<=m.buzz?"on":""}"></i>`).join("")}</span></span></div>
+      <p class="why">${m.why}</p>
+      <ul class="buckets">${bs.map(b=>`<li><span class="tag ${b.chain}">${b.chain==="All"?"All chains":b.chain}</span><div>${b.name}${b.sale?` <span class="mono" style="font-size:12px;color:var(--muted)">· on sale ${fmt(b.sale)}</span>`:""}<small>${b.detail}</small></div></li>`).join("")}</ul>
+    </div>
+    <aside class="stub">
+      <div class="label">Opening night plan</div>
+      <div class="night">${m.previewLabel}</div>
+      <div>${m.status==="upcoming" ? countdown(sale||m.preview, sale?"Buckets on sale":"Previews") : countdown(m.open,"In theaters,")}</div>
+      ${plan(m)}
+    </aside>
+  </article>`;
+}
+
+function visible(m){
+  if(filter==="want") return want.has(m.id);
+  if(filter==="all") return true;
+  return chainsOf(m).includes(filter);
+}
+
+function render(){
+  const up = MOVIES.filter(m=>m.status==="upcoming").sort((a,b)=>b.buzz-a.buzz||a.open.localeCompare(b.open));
+  const cur = MOVIES.filter(m=>m.status==="current");
+  const upV = up.filter(visible), curV = cur.filter(visible);
+  const empty = filter==="want" ? "Tap ☆ Want on a movie to add it here." : "No buckets for this chain right now.";
+  $("#upcoming").innerHTML = upV.length ? upV.map((m)=>card(m, up.indexOf(m))).join("") : `<div class="empty">${empty}</div>`;
+  $("#current").innerHTML = curV.length ? curV.map(m=>card(m,0)).join("") : `<div class="empty">${empty}</div>`;
+  document.querySelectorAll(".star").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.id; want.has(id)?want.delete(id):want.add(id); saveWant(); render();
+  });
+}
+
+$("#theaters").innerHTML = THEATERS.map(t=>`<tr>
+  <td><b>${t.name}</b>${t.note?`<div class="none">${t.note}</div>`:""}</td>
+  <td><span class="tag ${t.chain}">${t.chain}</span></td>
+  <td>${t.addr}</td>
+  <td class="mono">${t.mi.toFixed(1)} mi</td>
+  <td><a href="${dirs(t)}" target="_blank" rel="noopener">Directions</a></td></tr>`).join("");
+
+$("#flips").innerHTML = FLIPS.map((f,i)=>{
+  const lo = net(f.resale[0], f.retail[1]), hi = net(f.resale[1], f.retail[0]);
+  const m = (lo+hi)/2;
+  return `<div class="flip"><div class="n">${i+1}</div>
+    <div><h4>${f.item}<span class="verdict ${f.verdict}">${VLABEL[f.verdict]}</span></h4>
+      <p>${f.where}</p><p>${f.why}</p>
+      <a href="${sold(f.q)}" target="_blank" rel="noopener">eBay sold listings →</a></div>
+    <div class="nums">Retail <b>$${f.retail[0]}–${f.retail[1]}</b>Resale est. <b>$${f.resale[0]}–${f.resale[1]}</b>Profit each <b class="net ${m<10?"neg":""}">${lo<0?"−$"+Math.abs(lo):"$"+lo} to $${hi}</b></div></div>`;
+}).join("");
+// ---- Live data (written daily by the tracker into data.json next to this page) ----
+const money = v => v==null ? "–" : "$"+Math.round(v);
+const esc = s => String(s??"").replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const safeUrl = u => /^https:\/\/(www\.)?ebay\.com\//.test(u||"") ? u : "#";
+function spark(s){
+  if(!s||s.length<2) return "";
+  const W=200,H=40,max=Math.max(...s,1);
+  const pts=s.map((v,i)=>[i/(s.length-1)*W, H-2-(v/max)*(H-6)]);
+  const line=pts.map(p=>p.map(n=>n.toFixed(1)).join(",")).join(" ");
+  const last=pts[pts.length-1];
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true">
+    <polygon points="0,${H} ${line} ${W},${H}" fill="var(--stripe-soft)"/>
+    <polyline points="${line}" fill="none" stroke="var(--stripe)" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+    <circle cx="${last[0]}" cy="${last[1]}" r="2.6" fill="var(--stripe)"/></svg>`;
+}
+function renderLive(d){
+  const when = new Date(d.updated);
+  $("#live-status").innerHTML = `<span><span class="dot"></span>Live eBay data</span><span>Updated ${when.toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}</span><span>Profit takes out eBay's ${(d.fee_pct*100).toFixed(1)}% fee. Buyer pays shipping.</span>`;
+  $("#live-status").hidden = false;
+  $("#flips").innerHTML = d.items.map((f,i)=>{
+    const top = (f.top||[])[0];
+    return `<div class="flip"><div class="n">${i+1}</div>
+      <div><h4>${esc(f.name)}<span class="verdict ${f.verdict}">${VLABEL[f.verdict]}</span></h4>
+        <p>${esc(f.chain)} · ${esc(f.store)} · on sale ${fmt(f.sale)}</p>
+        <p>Sell price based on ${esc(f.basis)}. <span class="conf">${f.confidence} confidence</span></p>
+        <div class="stats"><span><b>${f.listings}</b> listings</span><span>median ask <b>${money(f.median_ask)}</b></span>
+          <span><b>${f.units_sold}</b> sold${f.sold_avg?` at <b>${money(f.sold_avg)}</b> avg`:""}</span><span><b>${f.watchers}</b> watching</span>
+          ${f.ask_vs_sold_pct>15?`<span class="gap">Asks are ${f.ask_vs_sold_pct}% above real sales</span>`:""}</div>
+        <p><a href="${safeUrl(f.ebay)}" target="_blank" rel="noopener">eBay sold listings →</a>${top?` · <a href="${safeUrl(top.link)}" target="_blank" rel="noopener">Top listing (${money(top.price)})</a>`:""}</p></div>
+      <div class="nums">You pay <b>${money(f.retail)}</b>Sells for <b>${money(f.est_sell)}</b>Profit each <b class="net ${(f.profit??0)<15?"neg":""}">${f.profit==null?"–":(f.profit<0?"−$"+Math.abs(Math.round(f.profit)):"$"+Math.round(f.profit))}</b></div></div>`;
+  }).join("");
+  $("#trends").innerHTML = (d.trends||[]).map(t=>`<div class="trend"><div class="q">${esc(t.q)}</div>
+    <div class="v">${t.current}<small class="${(t.change_pct??0)>=0?"up":"down"}">${t.change_pct==null?"":(t.change_pct>=0?"▲ ":"▼ ")+Math.abs(t.change_pct)+"% vs last week"}</small></div>${spark(t.series)}</div>`).join("");
+  $("#hot").innerHTML = (d.hot||[]).map(h=>`<tr><td><a href="${safeUrl(h.link)}" target="_blank" rel="noopener">${esc(h.title)}</a></td><td class="mono">${money(h.price)}</td><td class="mono">${h.sold||"–"}</td><td class="mono">${h.watchers||"–"}</td></tr>`).join("") || `<tr><td colspan="4" class="none">No listings with sales or watchers yet.</td></tr>`;
+  $("#live-extra").hidden = false;
+}
+fetch("data.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{ if(d&&d.items) renderLive(d); }).catch(()=>{});
+
+$("#comps").innerHTML = COMPS.map(c=>`<tr><td>${c.b}</td><td class="mono">${c.r}</td><td class="mono">${c.s}</td><td class="mono">${c.x}</td><td>${c.t}</td></tr>`).join("");
+
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+  filter=c.dataset.chain;
+  document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", x===c));
+  render();
+});
+render();
+</script>
+</body></html>
