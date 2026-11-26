@@ -117,6 +117,16 @@ h3.minor + .sub{margin-top:-6px}
 .rstatus b{color:var(--ink)}
 .rstatus.wait b{color:var(--warn)}
 .rstatus.ok b{color:var(--ok)}
+.asbtn{background:none;border:0;padding:0;cursor:pointer;margin-left:auto}
+.keybox{flex:1 1 100%;border-top:1px solid var(--line);padding-top:10px;font-size:13px;color:var(--muted)}
+.keybox p{margin:0 0 6px}.keybox b{color:var(--ink)}
+.keybox ol{margin:0 0 10px;padding-left:20px;display:grid;gap:3px}
+.keybox a{color:var(--stripe);font-weight:600}
+.keyrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.keyrow input{flex:1 1 240px;min-width:0;font:500 13px var(--mono);padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.keyrow input:focus-visible{outline:3px solid var(--butter);outline-offset:1px}
+.keyrow .asbtn{margin-left:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .livebar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:13px;color:var(--muted);margin:0 0 12px}
 .livebar .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:6px}
 .stats{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:6px}
@@ -170,8 +180,24 @@ h3.minor + .sub{margin-top:-6px}
 
   <div class="refresh" id="refresh-box">
     <button class="rbtn" id="refresh-btn" type="button">↻ Refresh</button>
-    <a class="rlink" id="pull-link" href="https://github.com/yaakov-AI-99/bucket-watch/actions/workflows/update-data.yml" target="_blank" rel="noopener">Pull new eBay prices now ↗</a>
     <span class="rstatus" id="refresh-status" role="status" aria-live="polite">Loading prices…</span>
+    <button class="rlink asbtn" id="key-toggle" type="button">Refresh settings</button>
+    <form class="keybox" id="key-box" hidden>
+      <p><b>One-time setup so Refresh runs a new search.</b> The key is saved only in this browser and can only start this page's price update.</p>
+      <ol>
+        <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → New fine-grained token ↗</a></li>
+        <li>Name: <b>Bucket Watch refresh</b>. Expiration: <b>1 year</b> (or whatever you like).</li>
+        <li>Repository access: <b>Only select repositories</b> → <b>bucket-watch</b>.</li>
+        <li>Permissions → Repository permissions → <b>Actions: Read and write</b>. Leave everything else as is.</li>
+        <li>Click <b>Generate token</b>, copy it, and paste it here.</li>
+      </ol>
+      <div class="keyrow">
+        <label for="key-input" class="sr">GitHub key</label>
+        <input id="key-input" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+        <button class="rbtn" id="key-save" type="submit">Save key</button>
+        <button class="rlink asbtn" id="key-forget" type="button">Remove saved key</button>
+      </div>
+    </form>
   </div>
 
   <h2>Coming up</h2>
@@ -457,9 +483,16 @@ function renderLive(d){
   $("#live-extra").hidden = false;
 }
 // ---- Refresh ----
-// GitHub Pages caches files for up to 10 minutes, so add a unique query string to always get the newest data.json.
-let lastUpdated = null, pollTimer = null, pollStop = 0;
-function stopPoll(){ clearInterval(pollTimer); pollTimer = null; }
+// Refresh = start a new eBay + Google Trends search on GitHub (needs the one-time key saved in this browser),
+// then load the new data.json straight from the repo as soon as it's committed.
+const REPO = "yaakov-AI-99/bucket-watch", WF = "update-data.yml", API = "https://api.github.com/repos/"+REPO;
+const KEY_NAME = "bw-gh-key";
+let lastUpdated = null, busy = false;
+const getKey = () => { try { return localStorage.getItem(KEY_NAME) || ""; } catch(e){ return ""; } };
+const setKey = v => { try { v ? localStorage.setItem(KEY_NAME, v) : localStorage.removeItem(KEY_NAME); } catch(e){} };
+const gh = (path, opts={}) => fetch(API+path, {...opts, cache:"no-store", headers:{
+  "Authorization":"Bearer "+getKey(), "Accept":"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28", ...(opts.headers||{})}});
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
 function ago(iso){
   const m = Math.round((Date.now()-new Date(iso))/60000);
   if(m<1) return "just now";
@@ -469,42 +502,72 @@ function ago(iso){
   return Math.round(h/24)+" days ago";
 }
 function setStatus(html, cls){ const el=$("#refresh-status"); el.innerHTML=html; el.className="rstatus"+(cls?" "+cls:""); }
+function showAge(){ if(lastUpdated) setStatus(`eBay prices from <b>${ago(lastUpdated)}</b>${getKey()?"":" · tap Refresh settings to turn on live searches"}`); }
 async function loadData(){
-  const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"});
-  if(!r.ok) throw new Error("HTTP "+r.status);
-  const d = await r.json();
-  if(d && d.items) renderLive(d);
+  let d = null;
+  if(getKey()){ // straight from the repo: no GitHub Pages cache delay
+    try{ const r = await gh("/contents/data.json?ref=main&t="+Date.now(), {headers:{"Accept":"application/vnd.github.raw+json"}}); if(r.ok) d = await r.json(); }catch(e){}
+  }
+  if(!d){ const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"}); if(!r.ok) throw new Error("HTTP "+r.status); d = await r.json(); }
+  if(d && d.items){ renderLive(d); lastUpdated = d.updated; }
   return d;
 }
-function showAge(){ if(lastUpdated) setStatus(`eBay prices from <b>${ago(lastUpdated)}</b> · checked ${new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"})}`); }
-async function refresh(){
-  const b=$("#refresh-btn"); b.disabled=true; setStatus("Checking for the newest prices…");
-  try{
-    const d = await loadData();
-    const isNew = lastUpdated && d.updated!==lastUpdated;
-    lastUpdated = d.updated;
-    if(isNew) setStatus(`<b>New prices loaded</b> (from ${ago(d.updated)})`, "ok"); else showAge();
-  }catch(e){ setStatus("Couldn't load prices. Check your connection and tap Refresh again.", "wait"); }
-  b.disabled=false;
+async function latestRun(){
+  const r = await gh(`/actions/workflows/${WF}/runs?per_page=1`);
+  if(!r.ok) return null;
+  return ((await r.json()).workflow_runs||[])[0] || null;
 }
-function waitForNewData(){
-  // After "Pull new eBay prices now", watch for the new data for up to 12 minutes.
+async function newSearch(){
   const startedWith = lastUpdated;
-  pollStop = Date.now()+12*60000;
-  stopPoll();
-  setStatus("<b>Getting new eBay prices…</b> In the GitHub tab, click <b>Run workflow</b>. New prices show up here by themselves, usually in 2–4 minutes.", "wait");
-  pollTimer = setInterval(async()=>{
-    try{
-      const d = await loadData();
-      if(d.updated!==startedWith){ lastUpdated=d.updated; stopPoll(); setStatus("<b>New prices loaded</b> (just now)", "ok"); return; }
-    }catch(e){}
-    if(Date.now()>pollStop){ stopPoll(); setStatus("<b>No new prices yet.</b> Make sure you clicked Run workflow on GitHub, then tap Refresh in a few minutes.", "wait"); }
-  }, 30000);
+  setStatus("<b>Starting a new eBay search…</b>", "wait");
+  let run = await latestRun().catch(()=>null);
+  const alreadyRunning = run && run.status !== "completed";
+  if(!alreadyRunning){
+    const r = await gh(`/actions/workflows/${WF}/dispatches`, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({ref:"main"})});
+    if(r.status===401 || r.status===403 || r.status===404){
+      setStatus("<b>The saved GitHub key didn't work.</b> It may have expired or be missing Actions: Read and write. Open Refresh settings to replace it.", "wait");
+      $("#key-box").hidden=false; return;
+    }
+    if(!r.ok){ setStatus("<b>GitHub didn't start the search</b> (error "+r.status+"). Try again in a minute.", "wait"); return; }
+  }
+  const t0 = Date.now();
+  while(Date.now()-t0 < 12*60000){
+    await sleep(15000);
+    const secs = Math.round((Date.now()-t0)/1000);
+    run = await latestRun().catch(()=>null);
+    if(run && run.status==="completed" && run.conclusion && run.conclusion!=="success" && Date.parse(run.created_at) >= t0-60000){
+      setStatus(`<b>The search failed on GitHub.</b> <a class="rlink" href="${run.html_url}" target="_blank" rel="noopener">See what happened ↗</a>`, "wait"); return;
+    }
+    try{ const d = await loadData(); if(d.updated!==startedWith){ setStatus(`<b>New prices loaded</b> (searched ${ago(d.updated)})`, "ok"); return; } }catch(e){}
+    setStatus(`<b>Searching eBay and Google Trends…</b> ${Math.floor(secs/60)}:${String(secs%60).padStart(2,"0")} so far. This usually takes 2–3 minutes. The page updates by itself.`, "wait");
+  }
+  setStatus("<b>The search is taking longer than usual.</b> Tap Refresh again in a few minutes.", "wait");
+}
+async function refresh(){
+  if(busy) return;
+  busy = true; const b=$("#refresh-btn"); b.disabled=true;
+  try{
+    if(getKey()) await newSearch();
+    else { setStatus("Checking for the newest saved prices…"); await loadData(); showAge(); $("#key-box").hidden=false;
+           setStatus(`Loaded the newest saved prices (from <b>${ago(lastUpdated)}</b>). To run a brand-new search when you tap Refresh, do the one-time setup below.`); }
+  }catch(e){ setStatus("Couldn't reach the price data. Check your connection and tap Refresh again.", "wait"); }
+  b.disabled=false; busy=false;
 }
 $("#refresh-btn").addEventListener("click", refresh);
-$("#pull-link").addEventListener("click", waitForNewData);
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && !pollTimer) refresh(); else if(!document.hidden) showAge(); });
-refresh();
+$("#key-toggle").addEventListener("click", ()=>{ const k=$("#key-box"); k.hidden=!k.hidden; if(!k.hidden) $("#key-input").focus(); });
+$("#key-box").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const v=$("#key-input").value.trim();
+  if(!v){ setStatus("Paste the GitHub key first, then tap Save key.", "wait"); return; }
+  setKey(v); $("#key-input").value="";
+  setStatus("Checking the key…");
+  const r = await gh(`/actions/workflows/${WF}`).catch(()=>null);
+  if(r && r.ok){ $("#key-box").hidden=true; setStatus("<b>Key saved.</b> Tap Refresh to run a new search.", "ok"); }
+  else { setKey(""); setStatus("<b>That key didn't work.</b> Make sure it has access to bucket-watch with Actions: Read and write, then paste it again.", "wait"); }
+});
+$("#key-forget").addEventListener("click", ()=>{ setKey(""); setStatus("Saved key removed from this browser."); });
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && !busy) loadData().then(showAge).catch(()=>{}); });
+loadData().then(showAge).catch(()=>setStatus("Couldn't load prices. Tap Refresh to try again.", "wait"));
 
 $("#comps").innerHTML = COMPS.map(c=>`<tr><td>${c.b}</td><td class="mono">${c.r}</td><td class="mono">${c.s}</td><td class="mono">${c.x}</td><td>${c.t}</td></tr>`).join("");
 
