@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T20:39+00:00",
+ "updated": "2026-11-26T20:32+00:00",
  "searches_used": 10,
  "fee_pct": 0.1325,
  "items": [
@@ -10,71 +10,71 @@
    "store": "Regal Lynbrook",
    "sale": "2026-11-06",
    "retail": 99,
-   "listings": 41,
-   "low_ask": 157.5,
+   "listings": 38,
+   "low_ask": 180.5,
    "high_ask": 750.0,
-   "median_ask": 335.0,
-   "units_sold": 194,
-   "sold_avg": 327.06,
-   "watchers": 94,
+   "median_ask": 345.49,
+   "units_sold": 64,
+   "sold_avg": 346.43,
+   "watchers": 86,
    "bids": 0,
-   "ask_vs_sold_pct": 2,
-   "est_sell": 327.06,
-   "basis": "194 sold at an average of $327",
+   "ask_vs_sold_pct": 0,
+   "est_sell": 346.43,
+   "basis": "64 sold at an average of $346",
    "confidence": "high",
-   "profit": 180.35,
-   "score": 1057.8,
+   "profit": 197.34,
+   "score": 968.8,
    "verdict": "buy",
    "top": [
     {
-     "title": "Godzilla Minus Zero \u2013 Giant 3D Molded Godzilla Popcorn Bucket, Ready To SHIP",
-     "price": 329.99,
-     "ship": 0,
-     "sold": 77,
-     "watchers": 0,
-     "bids": 0,
-     "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/960038335425?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8A6YS7AEE05K5JFN6TGBCHG&hash=itemdf86be73c1:g:Ui8AAeSwXWpqx8v0&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8a62xckuF3ZB0nZQqnVbANUSbaWY0zfgQg33nY%2BK6d4B%2BcjwbO7wOQK9aUGtwD0n%2Fj3rC%2BWFfb1IdjasZum6NJIBK6qjhR6sNERhsTf3FQD8JTiC%2FzMEwJx2%2BabX%2B%2FepisaR2wT21GbU6W0XPbtWp2UOsRxEroaUU5wfbTwMX9AnqQgAe8EBKeUbfNFbwVZ5Uu855Y9tNs4v0n0%2Fk8PyS5MhbEoxSdPn42eWYGOUrRux2eMN8y0A7obFi%2BGqisIOzjLRBtNxRzKZdeaz3J5UqjUItp08Xe%2BEmNMI6gnppUmD8RkWaWCJmtn0BQXTzyJGM%3D%7Ctkp%3ABFBMoJT7xsJo"
-    },
-    {
      "title": "Godzilla Minus Zero \u2013 Giant 3D Molded Godzilla Popcorn Bucket IN STOCK SHIPS NOW",
-     "price": 314.94,
-     "ship": 27.44,
+     "price": 345.99,
+     "ship": 23.61,
      "sold": 57,
      "watchers": 0,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/198696410747?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8A6YS7BFRV5YTT1PZ0H7G80&hash=item2e433a9e7b:g:0McAAeSwjQZqxn7~&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9f8oQfPPhmYd%2F4KL0%2FLIOPFWGBdH1RfAESAIP74QudidhIf%2FsbHhHbV36cDB2Y2YFdiHNR%2BfFFMDITtAcktwiAM6LPVR508AaPU6dl459FPStooBQd1t%2FKyr2bf36YC%2BsT%2FydQRyBouylcAr%2Boa5%2F%2BDnuyEY0aD9co2yT%2FoiVs4fNsMvZo%2FKE%2FgrAacr%2FiK7N2%2BfZoFVpZ7oH1FFZmiff0K6%2FspYIs7O6DVSxahA%2F3237LtB6P2%2B8nObCHwyoaNxbmMv1PDWq6IlpEqj7Mjq82XS1sKF2JDE7GUiGTIsMV0xNAdD6Rpa4bVGmHhW9oc0g%3D%7Ctkp%3ABk9SR6CU-8bCaA"
-    },
-    {
-     "title": "Godzilla Minus Zero \u2013 Giant 3D Molded Godzilla Popcorn Bucket SHIPS ASAP",
-     "price": 329.99,
-     "ship": 0,
-     "sold": 43,
-     "watchers": 0,
-     "bids": 0,
-     "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/960038312406?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8A6YS7AK1X60SAJAFGT3GYF&hash=itemdf86be19d6:g:09kAAeSwnoFqx8mZ&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Bj8VdJU0ZHan2DYBmZ%2BK012LjM5PM1p74dLAK5FdyevY7rrqA24ZgvRuPfJUPbGQvjGJDEqi5MVPfbo%2BcYRS79a9GHgLenUg21tYUIkDeZyjYOFseQr41k5n%2BLX63B44iKPfbYs30LqoJaBU9QdKs6RhkHZDAsg0lTMjCvn8xdTJRJQpUb0uNPJNj8fRSQIWVlTgCOnBzY44QWMjgpzBdhzXwSo1%2BvA9SL61shZw%2BHFR5OCO6zHzTr64JJp6M7jUtCG5A3JOiik225ctTFrfA0Hlw%2BQy9et%2FVGt9iWttAmnSoTAcUYLMQXjhVxbHRgKnc%3D%7Ctkp%3ABFBMoJT7xsJo"
-    },
-    {
-     "title": "NEW Godzilla Minus Zero 19.5 inch Tall Godzilla Popcorn Bucket Charity",
-     "price": 345.0,
-     "ship": 0,
-     "sold": 10,
-     "watchers": 0,
-     "bids": 0,
-     "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/377616054836?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8A6YS7CN2BPVYK3MKXZ1PZ0&hash=item57ebabba34:g:ieMAAeSwXXZq6OqF&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9ROhDE7QmzmK49cx9Kqw9jrYx136wazYBz8VrX--xh%2B9kpKdkxCsdDrIoomqSSKetQU4dYdnT%2FHgFHWMAJVhYmsG2TQkTlB2XZZ1nxAzRB1tHfvGbcC%2BXxcSDoNNRQf7%2FzeGi7U605AAg0flSG%2Be0XTcGV%2FerO%2FsBnvc3ZuLGLEkf81jvQGUkn7gkOafyo1AbvlS2SIYKDqBULFneT4CBovE98nRR%2B9ipSoJDouIUWgfn2cP%2B57Sx5IY%2BP%2FXx1FprPSFOQ%2F9p7BR0yVpblVWlq%7Ctkp%3ABk9SR6CU-8bCaA"
+     "link": "https://www.ebay.com/itm/198696410747?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8CRYPJSWCHJVV8753F6EBQH&hash=item2e433a9e7b:g:0McAAeSwjQZqxn7~&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2FJ0PFk0IVE0tkZ8UKJKvZbgk2wHs%2FihkMlVZlngbuuynWXPua0re6JVF7JHEc3IViIjbN6%2BYuDwGot9bgT2FguwOdAVATXI3iNP4jgyFboR3vEN9IZIKGrIygT%2B745nR%2BQQNE3yuaZfW6SEbmCLWyGJiZfmlgRcEYnE%2BbjDUY45bo3gZ9JE4NuiLP%2FjvXLWDeP%2BOC3t%2BhFWd3kN%2BObuH5NiJToOKM0LKopCY5mOHc4%2FqOUAecsKhzbQxvm%2BRKg%2FDYIi82JBRFtH%2BA2ufMTb1gr%7Ctkp%3ABk9SR_jp-pjDaA"
     },
     {
      "title": "Godzilla Minus Zero Giant 19.5\u201d Godzilla Popcorn Bucket",
      "price": 349.99,
-     "ship": 38.48,
+     "ship": 25.12,
      "sold": 7,
      "watchers": 0,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407270691283?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8A6YS7RTYSBNTRZCMT5VFRT&hash=item5ed33991d3:g:7v0AAeSwHmBqxQKc&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8zDvyc24L4jAen1vFj14NFsSFyUfZLfOF9JWptiMkdsedmC9wa77KI4dXekBuC7qorQmgyBysr52TX9SNDGIRYPEsVGTQzbnp%2BF%2FTpQpkL0aBi%2BrocNEwGp6tjUcUynsgRLHnq9YEu%2FL7w0WIM90t9D55NzkVPV1JKA5nVu5L5SoRdK%2BZIprN9oUM4nJ%2FmIfaPgypj2v1bHElt6ljKQMDQPfvhrGhGP6v9qADGaYwfZbEPoTIBNQPxVuZSdzawgNmKyxpO1tspT5Mow49TW9kQwCXZAxDw3moJBtVZga2VXUbKDFlUBDMAlnRGSuO8z68%3D%7Ctkp%3ABk9SR6iU-8bCaA"
+     "link": "https://www.ebay.com/itm/407270691283?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8CRYPKB6XCXKVWK4XZDC6CF&hash=item5ed33991d3:g:7v0AAeSwHmBqxQKc&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8zDvyc24L4jAen1vFj14NFsSFyUfZLfOF9JWptiMkdsedmC9wa77KI4dXekBuC7qorQmgyBysr52TX9SNDGIRYPEsVGTQzbnp%2BF%2FTpQpkL0aBi%2BrocNEwGp6tjUcUynshaqJ%2BD0sqHV642bbnVJtt9s%2FBK0Sp%2FDpAcpB7v1LlBImANLdZB9bpvbAG58pPK%2B3sIbTJKnwtuhCgMW1kxsuSzzeY3ZehQUIpraNzB1qIbyr6Pcf9%2FvxBVc0CE%2B4f%2B4iGikRt8Y3N9XO61F0A85wA%2FMlvSDw2a%2BHqY1M%2FQJG%2BHjOaZF81JCtMfSWWJ%2Fk5OjIY%3D%7Ctkp%3ABk9SR5Tq-pjDaA"
+    },
+    {
+     "title": "Godzilla Minus Zero Giant 19.5\u201d Godzilla Popcorn Bucket AMC Regal Cinemark",
+     "price": 349.99,
+     "ship": 25.12,
+     "sold": 0,
+     "watchers": 45,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/407270035890?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8CRYPK3QS92KRYY9GJGS5MP&hash=item5ed32f91b2:g:9j4AAeSwPGRqxM4P&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BFkFY1CkG4nWwSdxx9G3fmk2DzWoo592L%2B9vrZNZ1ioxBYHoL5b49MH9%2Fs3yjYZ%2BKFYEUolAKfMyOggcsDUrKw87c6OV9rHM51eujpRs9EkoQfwJiIgPbC%2FHqh1YYXJCjfvinpBeAOh5gYIyvFaDjoPiPrC3rMQFVd45EABuKZtbu91UOa1--bfupCganpJ0X3vfnQxMhn1SBslCIgSa3eOtRYn6okSsIJopRwn8ls%2FrKmJDmbsSXp1LzacBLyVJpSDA5%2BYvVO2r0N1IzsZcOdJoQSjcAbBpqTj57Ea5GXEk8fJWDp1d8oY9XguoEfHCE%3D%7Ctkp%3ABk9SR47q-pjDaA"
+    },
+    {
+     "title": "Godzilla Minus Zero Giant 19.5\u201d Godzilla Popcorn Bucket NEW/SHIPS NOW",
+     "price": 384.99,
+     "ship": 0,
+     "sold": 0,
+     "watchers": 23,
+     "bids": 0,
+     "format": "buy_it_now",
+     "link": "https://www.ebay.com/itm/920146698403?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8CRYPJWTTDPK35CT351RPJM&hash=itemd63d0460a3:g:26oAAeSwWrtq-jIk&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Bclic3%2BEiGy7fTkKMUqWt9CDMhMPgZqbavupFsZmb%2FK2Ty0qBP7eV6iZE%2BAno8HM5Z3GWQhxd54VRav%2Ff2ThRPDgx4BvKjQNz9Hr4TbIY0djzz0UEoeLGh%2BmBBgZRDjpWCw8wbtFXaBcEBcFdHwfb8gnA8%2B9twpoKrCF3Cdi88qZ7eOuKtrzm6pYhzg6XsoIn%2BACg8RHkzZxuZRPTz4u29bALxQq9Pdpij8OdV22cNlBzAIaqr7NtSOi2caRw%2BylBheYDNs%2Bv96%2BTwNXnqLXsJ57Kpf6rxzuBgANcRzPHzVE%2BSxauc9Dl4ISKeglUEH3I%3D%7Ctkp%3ABFBMhOr6mMNo"
+    },
+    {
+     "title": "Godzilla Minus Zero Movie 2026 19.5 in Godzilla Popcorn Bucket cups 5pc charity",
+     "price": 750.0,
+     "ship": 0,
+     "sold": 0,
+     "watchers": 13,
+     "bids": 0,
+     "format": "buy_it_now",
+     "link": "https://www.ebay.com/itm/377601838186?_skw=godzilla+minus+zero+popcorn+bucket&itmmeta=01M8CRYPK133XNVNFE486XB5K4&hash=item57ead2cc6a:g:taMAAeSw6glq4Pqv&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2F3%2Fx8vP%2FyyMdNhfTSfUVCKnUBjefG%2Fai%2B935PKYZoYKWXXpgNHW4zP9fVAKpkYS427gW8YGyMojXWkYcFqbOzQsrWNmWAyaCp2EgWGkIQm3BzzCyPomqfiZU7Guv932Mg5x82H%2BvhfGKeZ6IFNVTDuCosiA3hhtMeupc3p7ypCsqf%2BE21bpCYcBcaKBJe4zyD1PYNLm2JXYECtbuiQmd%2BW%2BndZrrn46C1TKWBt%2F12TL1XsnS3zcmfGMIVn%2FsiI%2FnBVwzqNaW7g%2BbOQJL1UK1ChCP6Q4VXnWM9nHwWkQIaC%2B%2BqiNlS8lM4O1mmZkNIArCI%3D%7Ctkp%3ABk9SR4rq-pjDaA"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=godzilla+minus+zero+popcorn+bucket&LH_Sold=1&LH_Complete=1"
@@ -86,71 +86,71 @@
    "store": "Regal Lynbrook",
    "sale": "2026-11-18",
    "retail": 30,
-   "listings": 69,
-   "low_ask": 24.99,
+   "listings": 71,
+   "low_ask": 29.99,
    "high_ask": 178.99,
-   "median_ask": 74.0,
-   "units_sold": 18,
-   "sold_avg": 92.9,
-   "watchers": 285,
+   "median_ask": 76.0,
+   "units_sold": 38,
+   "sold_avg": 149.99,
+   "watchers": 314,
    "bids": 0,
-   "ask_vs_sold_pct": -20,
-   "est_sell": 92.9,
-   "basis": "18 sold at an average of $93",
+   "ask_vs_sold_pct": -49,
+   "est_sell": 149.99,
+   "basis": "38 sold at an average of $150",
    "confidence": "high",
-   "profit": 48.87,
-   "score": 236.1,
+   "profit": 98.13,
+   "score": 502.7,
    "verdict": "buy",
    "top": [
     {
      "title": "The Hunger Games Sunrise On The Reaping Regal Popcorn Bucket Book Tin",
-     "price": 129.99,
+     "price": 149.99,
+     "ship": 11.99,
+     "sold": 29,
+     "watchers": 0,
+     "bids": 0,
+     "format": "buy_it_now",
+     "link": "https://www.ebay.com/itm/407324156558?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8CRYN352JDV2RB1B5HX3BY7&hash=item5ed669628e:g:77wAAeSwgzNq4xcx&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde--0ujDV%2Fq6K1LVAjKsvcTEJ4asGQlOCCs1SFBqQtY7xED%2Fu%2FyTAn7lUUE6DLBUjwj4h53D5MR%2B0bdriPrM4sUU%2BtGnut5wnkRXCSmFd7pF1GVuzSVrG1BDLmzl9RrbQsINGcDpYqiB3vnATaWq7%2FkgQReGEiGAarMjFxgqZgKeqkSKv16scte5z1bHCZMjj0W6uevCz4Cd72Gf3Y6O1mo%2BUzLmpkZ7ZU7vdghnvGtanASVCJNMxeHrI5fLVJl%2FWNc5Hp%2F7HjK%2F84CaL0%2BEEA0k%7Ctkp%3ABk9SR_bR-pjDaA"
+    },
+    {
+     "title": "The Hunger Games Sunrise On The Reaping Regal Popcorn Bucket Book Tin",
+     "price": 149.99,
      "ship": 11.99,
      "sold": 9,
      "watchers": 0,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407368668370?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8A6YQFVHSKQ8ERHC02F2MWP&hash=item5ed91094d2:g:6VMAAeSwgI9q-96-&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde87y36Vx4mkpA3ZNP24b4HgZVnWCQxv266596pH0SLTCkI%2FnkWKZdeoRk%2BdKdqtcdTW0O%2FJfXHxY8DsN1uIDgK%2FnApJglQvow%2FOOUNya3zbjkoQ3lCyupn8flIDKMzDaMNgVE0SysB5jrDAgoRmQaC31npZOY5QqQiIlWODToY997BvQbsgOVuBe%2BEmODdy%2BmvAM5LufTtHAznMhCX09JNI20q2z422UbrrGn9sFUOLSjxQADtVRvxfAEdRop6MvjLMkNdt4AMobwws%2FbvkwFiASTsDgPtJvry5nq75Yzh1%2Fidf9BQ31Xy6Mko73K1xliY%3D%7Ctkp%3ABk9SR6j4-sbCaA"
-    },
-    {
-     "title": "The Hunger Games Sunrise On The Reaping 2026 Popcorn Bucket V3 - Very Rare",
-     "price": 55.8,
-     "ship": 50.87,
-     "sold": 9,
-     "watchers": 0,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/227615418210?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8A6YQG2PSFDPH9V21CZRKTB&hash=item34feefa762:g:eTUAAeSwPHRq-aC4&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2FxveYoBTxy%2FKTm013Na3DHW3HT6hmb0O6xEPHJ7DWXbgsqduAAmb3irT%2FwGB5Xd319bxAHKEzTnGhNqzqPjE3mxojEo9in6Yt%2BvBWoKtaRAg2g5j%2BWW6X5vw%2B57zukbKsW91wGMgFRUTkhh6hhmJsHUQWMJ%2FAalgWFn1JM9%2FEnyEmWkrjgfgUW0oldKjzh8Y%2Fusm36vPCeqrRoi5U%2B6S5576Y0KVfGbzDTof1PfhB75DVcT6xh%2B9Xu%2FB%2FAizbjcPHm5BqZwVRtYb4iUUdHRvp2%7Ctkp%3ABk9SR6z4-sbCaA"
+     "link": "https://www.ebay.com/itm/407368668370?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8CRYN383GFJ0WN0M2F0SZ2K&hash=item5ed91094d2:g:6VMAAeSwgI9q-96-&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9CONGwkDe2TBB%2BcRdEmqo3bIqgX8SSNUkGWnIEe%2Bqh8SJv9cExR%2BmDDA4Yywx9pTEMS62ORyIZvbrqc1aSSe56mnjnxNUaS56NesB7S1qInZimHenCxnYTgGVgEgKxWY%2BybEJ8plJ5mgbGH5h%2BbPj1C5bWz9nHg9DBK9eDs6fK7Ttrj9T2Ts6vcpR0Jw%2FZSv6WOdbr5YOziP9hnf6nzQVuJP%2BgEaqX1hWWjbjmcIpPLqNbkaVqIztS0qRPJr%2F8kL7vjC5iRiMnwFQHlFgKpryE%7Ctkp%3ABk9SR_rR-pjDaA"
     },
     {
      "title": "The Hunger Games Sunrise On The Reaping 2026 Popcorn Bucket- in hand",
      "price": 58.37,
      "ship": 50.96,
      "sold": 0,
-     "watchers": 45,
+     "watchers": 47,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/820347156044?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8A6YQFZX5DP0BG06MMZMPFT&hash=itembf0080364c:g:hIUAAeSwZ-pq9eH4&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9xUj3SNE73GH6Oqb6Lw1lUjeZXUYk2bGKRVL2piwRiR5CKX3vtjGhfGGd13ftdGxyhalZ5nDn7mXVLdsln0jQGPXtUob8BVVg0QRGg%2FBjs9RbIkLrrhHC1wxrNMDB8AqHHtGA%2FOYgJP9dUtVcm6gun6la84qKf6yBdtlRxbpku86jAkU4To6gNxmI88fJGvYSI%2Fr8klI7Ggv5Sr%2F42fco0ofJN8gt9LFD0ZSl8Qh1%2Byh7BoeT6W%2Fjr3YKMPTEn%2BDJNNrK%2FcDwHMGXTYpymp54BVp5PfojVCQw8S3KHuMIhGUv5%2FormC1E23oHYmFsnoiU%3D%7Ctkp%3ABk9SR6r4-sbCaA"
+     "link": "https://www.ebay.com/itm/820347156044?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8CRYN3D8XQCAGAQSBCPPPNM&hash=itembf0080364c:g:hIUAAeSwZ-pq9eH4&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2Bc7VdHQheE6Oip%2FN4gETRjp9%2F4VOoJvn0VKKWplGjdkU5eJUbuTgx9t9%2By1m3yHATLyflD9BLWTr12nVa1gKSyS1O7G9Am5N277uq%2FkiH4e8BNHCFGbYi1VI37BWkfjkjnRSmaQ75IBk2U126GK4zvk22bV51gYj22g%2BbR37Y%2FmbQzwYrxvCM0noJc9%2FRNOIxkqe1N9qbdD4bpIs31KL0DQ6s1DaTdKQJq0rH7k%2BFCp8hErloOSgJ6slb3AJnp7gkP7Nex3fQfzNRWdk%2BQlUKo%7Ctkp%3ABk9SR4DS-pjDaA"
+    },
+    {
+     "title": "The Hunger Games Sunrise On The Reaping Popcorn Bucket Book Tin FAST SHIPPING !",
+     "price": 95.0,
+     "ship": 10.02,
+     "sold": 0,
+     "watchers": 31,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/267853684960?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8CRYN346SQ5K46WT4G71M5R&hash=item3e5d52e0e0:g:LQ4AAeSwMv1rAjNN&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8W3dTzgs86Sw%2FtgzLMuIEMVcaW2EifZzuj%2Fc3FTYGjGGkUbY9gzdeGRTvgPwEmTzAUZ3R3FYvl3I2x3qcRnoCFg1MTI9sfPSJ%2Fllp6MrNnWM0ojmBZPtWHo3pjRofgJGVzWCPgf0xochW05hhU1kpfkfsSGvcLXmTYxYWoq%2FNISVAf60l0pybJYfNqOl5GtPzO0ibr4mA%2F%2BaBD9b6w6Q4tG2SbAeKJ1m9hWvQLwvZo%2BeOxfhOtc8APAEj5Z0JNPZeqwUZVW8iayIfBT2GDevFBzo9eSvu8GF9eb%2Bq6HkBwdWcKbJW41O55i9npbMUjwcg%3D%7Ctkp%3ABFBM9tH6mMNo"
     },
     {
      "title": "Exclusive The Hunger Games Sunrise on the Reaping Regal Popcorn Bucket Book Tin",
      "price": 178.99,
      "ship": 0,
      "sold": 0,
-     "watchers": 28,
+     "watchers": 27,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/237199742012?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8A6YQFPV82KG5D13PNGJTRM&hash=item373a34d43c:g:qTYAAeSw-fZrA07L&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FaH%2F2wbk%2BdAjdQ%2BBGYtlrm8lDxPLJ4R49OcFzsAyKDIUY1qF6mSZi7KsMFo29eMp9aYc0UV8seQxAKer5CgZCk%2FG3Cx5lp2hPY09n8%2FOhtasdebtLejveRL5qMenQCGRt%2FL%2F8c9K96g5sEhPK2KdoejmblK4a9sfW0TYFEAQyx%2BQ8dF6%2BeLl66s6dc3nIc4eDUvgXlnkKKZiD3Cuy6ECpWRYVTkZu8N7QRFOlHTAHaBRmOEyhTDIS5O62keZEU5hGBhY95iKWzQoqO%2BKIEBxAhrRSCVYULH2qmYXappuapsnpoaAp6F2fu8DwP9IJorIY%3D%7Ctkp%3ABFBMpvj6xsJo"
-    },
-    {
-     "title": "Hunger Games Sunrise On The Reaping 2026 Popcorn Bucket & Cup Combo SHIPS NOW!",
-     "price": 78.99,
-     "ship": 0,
-     "sold": 0,
-     "watchers": 20,
-     "bids": 0,
-     "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/287705208967?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8A6YQFVSGGTADW72YBVK0D8&hash=item42fc911887:g:zhIAAeSw~75q65Fo&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9UIlu3O32LVsMWI791wkfGmOSruvQidxef1ESAk6mBGI0fi41pwgDul0Ax0uK9BQMlXq0swoImoqo2LY322b9EfsnQ6Ot%2B2OaBJ%2FYIfAUQbLyMoqpLXarRuNNjS8qLEjzs8tMosMVRS%2BpSbPmhx4LxoFlth5Xzs0jvQyUZsRnZ50OBQ51sIJhtUgK0Y0azSwjzX%2F6ftmoAybUxjvxsXjmNRUQtCxxKn5jUm9ZzcBJ%2F0AkQXuUvMvS3IeegmSGfK2iy52uEdfE7nb8U0Yd9O%2BLUKI8YDv4Lz4JLqgsuQUgcKNTfgtfIBROIRk4zsm7cJ9E%3D%7Ctkp%3ABFBMqvj6xsJo"
+     "link": "https://www.ebay.com/itm/237199742012?_skw=hunger+games+sunrise+reaping+popcorn&itmmeta=01M8CRYN34JS6AHJDX3067WXS6&hash=item373a34d43c:g:qTYAAeSw-fZrA07L&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FaH%2F2wbk%2BdAjdQ%2BBGYtlrm8lDxPLJ4R49OcFzsAyKDIUY1qF6mSZi7KsMFo29eMp9aYc0UV8seQxAKer5CgZCk%2FG3Cx5lp2hPY09n8%2FOhtasdebtLejveRL5qMenQCGRtR6wOl8QDUAIhT4HeFyS5ZT5nC%2BKJJRGnggFzZmCzx%2FHZi3nBdbmszwatzBVqrnHy4%2BwmXa2JbEAC2SS%2FXkbdWVgt5u31W9qmPOyPOgnXi%2FXn9fFcjgGFpi155Vbc55X%2FlGL0c3v4gP1Vrihay72LvT02DztU5LSOskLQGVFDVvebDAKPhHkN3jz7VCCNzFAI%3D%7Ctkp%3ABFBM9tH6mMNo"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=hunger+games+sunrise+reaping+popcorn&LH_Sold=1&LH_Complete=1"
@@ -162,20 +162,20 @@
    "store": "Regal Lynbrook",
    "sale": "2026-12-17",
    "retail": 60,
-   "listings": 13,
-   "low_ask": 69.0,
+   "listings": 17,
+   "low_ask": 51.99,
    "high_ask": 200.0,
    "median_ask": 130.0,
    "units_sold": 0,
    "sold_avg": null,
-   "watchers": 70,
+   "watchers": 73,
    "bids": 0,
    "ask_vs_sold_pct": null,
    "est_sell": 104.0,
    "basis": "80% of median ask ($130), few confirmed sales",
    "confidence": "low",
    "profit": 28.0,
-   "score": 44.9,
+   "score": 45.5,
    "verdict": "maybe",
    "top": [
     {
@@ -183,10 +183,10 @@
      "price": 120.0,
      "ship": 13.71,
      "sold": 0,
-     "watchers": 38,
+     "watchers": 41,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/206703574264?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8A6YNGPE5N9K9BDE7WZH4BC&hash=item30207e3cf8:g:PqQAAeSwiTdq-fnE&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2F0eKDMI8Yftu3FkuTVAbyf%2B3VInpqE0axjrz4O6mGKVxUbHt8%2BmNkenXgORZtIqrxqjZx6lFLU%2BqzBJ7ftTpxhRRKEqASQNdov2pw1%2F937uj9GRkCsE4gqbC9V7qFAt5LkGTyW8n9TcJ8y7jxw31TpszM%2B%2BoP185HznDYzGwNNKE3SsOdbC512gbNAbq8RhqJW8O527fPXPzxqkUeTQWKG3JFfFvuI9KmdDPOOSbRCFDqxu8jKTNEUWf5fvlwyIz2q1PhDQ8zQUhLwW4Ymzva2u5idZoCzde9tTrwxvBrPAFXPBItPaWntjLBUFNCQIco%3D%7Ctkp%3ABFBM6Nj6xsJo"
+     "link": "https://www.ebay.com/itm/206703574264?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8CRYKEFNP225CJB717KW8XE&hash=item30207e3cf8:g:PqQAAeSwiTdq-fnE&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8YI7uwTkzCVJx9B%2BgFEY2tRFu5rWemzfL95zAO5i%2BtLJcwTIVDhJwt69sXYbSckF4APNJ%2BMlmUCRP2qQmgRnGFY17sqQKoe%2BHB%2FF%2FvuyPyeVgo2u%2BRCcPw9ojqcqYWn5nlXSGQQ97upIxZ19cZr%2BsBr2XS2ne7AN8jf3m5Lw7%2FHZEH%2Fkr90kVEowuEBlTXYnEUbJmx%2Fnl2Ca5SM2pB9J978FqVbY2t%2Fzfh5qoiKuJ3oV8V7qxx%2B6y5EbFraxftE%2FXgrf181ySA%2FQaQ3okub98c%7Ctkp%3ABk9SR9y3-pjDaA"
     },
     {
      "title": "Avengers: Doomsday - Doctor Doom Helmet / Bust Popcorn Bucket pre order 16Dec",
@@ -196,7 +196,7 @@
      "watchers": 15,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/336878219713?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8A6YNGSKVY2HFE2YHEY2NJK&hash=item4e6f81b1c1:g:2mQAAeSwLDBq6omN&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8nHYeKt8ucy6Fnb3f9xC1lvDCTO%2Bb21AVxR5urprGsOZFtxJBHGLH0qwTBs7o2vSYfgiu96Q1CJ7MDXqztds%2FFqYRCZlMiuYYdUBnLJX0MK8ais1aQKwj%2B%2Fp1TIjGTCgD4lu0slb1fyDV2Rfl4OrFbi%2Bga0ZFB0aJEZX51RISwzbuLzk%2FeRf%2F98qJt3GjNOVPeqHWEukhg5TZYYpFPfsSLELS2TqVVzWEC2jgV5xsEtX7LNJrv4kzUWEVrjhQB09lq2Hg--71wnIImPEv0GvjCj%2FhehB3hlrR8d6cjZq5UoBiCJ5ssqMJ%2FuRcn6%2BPwv0Y%3D%7Ctkp%3ABk9SR-rY-sbCaA"
+     "link": "https://www.ebay.com/itm/336878219713?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8CRYKEM1H6MNYAFXNYRAYCF&hash=item4e6f81b1c1:g:2mQAAeSwLDBq6omN&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8MeE%2BZwnd4i%2F2YcFmnFYrqhJ9DNzHdlEA1h5DgM2PwHGNTw1sCHcntVBFxxj2aDGH20iwLX93BkMau6uOwGeDwnkHBTxNU7s9IypWrdPRv6%2FxRNx%2F9u%2BUN604jEBmrXZM%2BUVyiH9H3bLnokK%2FwWpXJaDXg7pG4vrYvhCS%2Fk7Im0%2B8ozH5yuUmQX1q5q4%2FfP%2FpZGypnvZh7X%2BKbAWeG%2BAWkIZgTcaGeXcRMGKHEQpNWN%2BZSzY4%2BSq2b2SgJtuQ52EW%2Fd%2BZZy2psznBehY2Hb8EV%7Ctkp%3ABk9SR963-pjDaA"
     },
     {
      "title": "Avengers Doomsday Doctor Doom Statue Popcorn Bucket Presale 12/14",
@@ -206,7 +206,7 @@
      "watchers": 11,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407324972813?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8A6YNGQCHVJ5X9EKNJZGPB5&hash=item5ed675d70d:g:9e8AAeSwm6lq43ao&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2BqlCiEaOtE%2F0FCUULOjaX9FAbPOMM8Gh7dQtCpVmsa3EznR9j9J8S2XnzBvY%2B2CIBMkCGgNbq7lIMb6kuwh%2FTraYFRfEE1C0rcCS4eYmzWsoi%2FKyhOSZfKiQysDkXQMLkm7upWl0ibrWfr8vdwpFDjhCRT3vd4A5waw8L%2FaktHq%2B3qBj7%2BeDTZvQwgHA93CooCDS4O%2FbbI3CHYmPGUbtpyCmeo3kq9rq45uZ90htjFlqo7kyuTar3UswiMTh22JGfZLwSJ6doO0KZiPaPs73hA%7Ctkp%3ABk9SR-jY-sbCaA"
+     "link": "https://www.ebay.com/itm/407324972813?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8CRYKEGYNDRVEDA1NSXCKHP&hash=item5ed675d70d:g:9e8AAeSwm6lq43ao&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2BqlCiEaOtE%2F0FCUULOjaX9FAbPOMM8Gh7dQtCpVmsa3AlfwP1unmE%2Fw%2Bfp62l3%2FD1jxLlEJXl%2BVeE5MqkqGqP7%2BlVGzyIY30kXuQhdTSBZZfKidmLKpcaAtLlffYCbhz3YbRO3GbIaZT9NaGfzNlJx4Rz5kAydLhU9tVlu%2FN8jZyb4jJ3IOMM9MRLs5y1%2FAAqRtZIyd26AsqOpqppYXOiNpRHUncvI5IPYaEazZH17aSwIiBV%2FFIX%2BOJRHb2cw2lhysba%2FQNoDdEEZSupRFqrh%7Ctkp%3ABk9SR9y3-pjDaA"
     },
     {
      "title": "Avengers Doomsday Doctor Doom Statue Popcorn Bucket Presale 12/18",
@@ -216,7 +216,7 @@
      "watchers": 4,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/237177764626?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8A6YNGPWEY2CGJTD04NHVG7&hash=item3738e57b12:g:vbIAAeSwFgtq88xq&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9DAGXPq0p0np%2FDM%2Fk7dK0mJkVZYiYPn5RgRg7w%2B9S9eXJ%2BMCGGWZ0Y0nU9uAnMkZHCl3SDL%2BzNB37Lp9JT5WwiC1K1cdvNIIK9mQxr8EouxYSOwi8ARFizARanGkMNiEqTOFqRD0PsCLVUfyRKm7osBoVacyqVNWyR1m3zWn8eK4Or0wiBQvZmGmLLijNyABUiCInemslrNuDkK0Gwiqu25leKgtYblJKU5lJGRzkLGufT1N7%2BYV%2F4LJKsTUG%2F2x9qJaOWScQrr5RXiBJxUcX%2B%7Ctkp%3ABk9SR-jY-sbCaA"
+     "link": "https://www.ebay.com/itm/237177764626?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8CRYKEG7DCGSKPF8JR7KDXC&hash=item3738e57b12:g:vbIAAeSwFgtq88xq&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Bn%2BPyGH7NqYi3WSRpB3pq6a%2Bwb01361KMrB1Z8H7RwLT4uJB9n6sWntS2DXLycup4MtibLQqASS4dlIupPGFnO8rT4v6rD2h0n3OA74NhTngn3i4QFpkSdFY9EBufrl58XNSet1xbyQywjBg9fANzNmJBtPKAcr7O0%2FR5en0t3a6F%2Bx8Bh8IPep4zFNFyt31kF07EQ56tlViLmpTd051vGENrJN593gev%2BklBhJC94Sjb8ceWhaku%2BfaZSw6W5KRkaqxsYhIv87IlXbfdBKq8XPdO1TZ%2BHowoN3s5lSgjrW7J6PSuHnlGZIKfK93%2BDzDU%3D%7Ctkp%3ABk9SR9y3-pjDaA"
     },
     {
      "title": "Avengers Doomsday Doctor Doom Statue Popcorn Bucket Presale Cinemark 12/18",
@@ -226,7 +226,7 @@
      "watchers": 2,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/198777134941?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8A6YNGW7Q72TWJ46DVH3PFK&hash=item2e480a5f5d:g:VMcAAeSwbNlq7cuJ&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2Fc4rC2C8rqz1Kua2t%2B1SruyXYF0Z4U65UgklhtpBgMt%2FEDtAOGjR4Z3mPESbz67oFTPvZx3tdjV7UZRiRXiYZtYjXEi2NplbH3Em9Yy10JjmMZfk6u0B2x6EMp%2FU4wo8HUL%2Fmf6qYuNCB5YE9%2FlWcPfjn4%2B8yIoaOorgQSSaEsdeLQ9jX0FIn32ydbnQCgNMIqG8zl7rdt8cMyd9TeKcXQSS2xGpiF7bVRDZv8rkB%2B3EJr520j0igwceRXQneQzZO--P1VnEUww1qBy7QPRq88%7Ctkp%3ABk9SR_DY-sbCaA"
+     "link": "https://www.ebay.com/itm/198777134941?_skw=doctor+doom+statue+popcorn+bucket&itmmeta=01M8CRYKEPH8F0629AAGGPDWME&hash=item2e480a5f5d:g:VMcAAeSwbNlq7cuJ&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2F4yeow8q0IRDFShzowjmJv%2BFtpbTBRr%2B%2B%2FGvzeqnzTB5kVDIxY0AUBHTiWcETMcwvEL%2FZVfvccrN7rZFnct%2B5ETX%2Fq30Ik4haVz%2FlVaL6UHppuDxiymI6%2BS3b%2FaKaIAr9Iz4adlGfRQznRXG7qF5ex4MtXdlIwmX4FJrLh0YImVGA%2BTSrkBmxqL4JhnhRcrSHO3wNem6QEk8Xjyypn1A8GHGh58ki6eZrtZfoqii%2FnnIge1sj66EAxk7Pv1V78S1eAdzy54y1IQmat7Ginh8ZGKd25HDguvQXYQQB5c2t%2FEtTvf0TsbgDHzTdRBs%2F6Uo8%3D%7Ctkp%3ABk9SR-C3-pjDaA"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=doctor+doom+statue+popcorn+bucket&LH_Sold=1&LH_Complete=1"
@@ -238,20 +238,20 @@
    "store": "Regal Lynbrook",
    "sale": "2026-12-17",
    "retail": 40,
-   "listings": 4,
-   "low_ask": 89.99,
+   "listings": 6,
+   "low_ask": 65.0,
    "high_ask": 144.27,
-   "median_ask": 103.05,
+   "median_ask": 103.22,
    "units_sold": 0,
    "sold_avg": null,
    "watchers": 49,
    "bids": 0,
    "ask_vs_sold_pct": null,
-   "est_sell": 82.44,
+   "est_sell": 82.58,
    "basis": "80% of median ask ($103), few confirmed sales",
    "confidence": "low",
-   "profit": 28.78,
-   "score": 41.4,
+   "profit": 28.95,
+   "score": 41.7,
    "verdict": "maybe",
    "top": [
     {
@@ -262,7 +262,7 @@
      "watchers": 42,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407324979197?_skw=doom+throne+popcorn+bucket&itmmeta=01M8A6YH7HHN2FGNPH2HMV28CY&hash=item5ed675effd:g:oyIAAeSwGFdq43cX&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8WD9dm7iMTRYq2KByeyo9gmuntzN3JVjSPK6XdAmjFQsN2p3Zmvk5PWeAOZ3PzqmJfXg5Mt0mERwtjxBdJ2yWTyYzR2MDiBC9u796qTpI%2FFWk7lJA%2FbqIkCfkCCbMH9jtkLEI223hp6UOvtmt04hhVuU%2Fpy1IByHAvAK2UccUt7eIaZ0sKqJlZCpTImGvNUxpiydXsTeGaopPFXYT6CY2%2BvY3cOfkvwm9tr0FvZr7ZrBn2YkE8FLmqIgBJi6WBjZC%2B%2FX8w24xWeyQZxa%2BLglXw%7Ctkp%3ABk9SR46U-sbCaA"
+     "link": "https://www.ebay.com/itm/407324979197?_skw=doom+throne+popcorn+bucket&itmmeta=01M8CRYEZKDENS82HQXZWF8FTE&hash=item5ed675effd:g:oyIAAeSwGFdq43cX&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FqVbjjW7aNbuicFQp2G37pRUyOsyadtUhtV%2B%2Bv4bIJ0t4bZm3VAuImsfBwE3EPmjwqAbsJ5Vfc452U8AwXrbdVioJq5lW7r89YDbHX4Uy%2FscgdztrXJ8fHhprNSjmKFLp2yGa0Gxes1h6sjFWknMAt7%2BnKVMj1ecNtsYDY9fAMLA0I%2B%2BAc%2FKcsjL95ykIKY5zP8FBhbuJ2hH4rQjbRJF1HQowVJPMHvi9IMa3UJd8%2FfCs18PwqX30d15247pNZo%2FbUj3BM%2F0tnzzLM%2FOZoMkcWQBVSA9NAQA80K3qTB17FMnTgFIvilJLBWKT21k%2BpdHs%3D%7Ctkp%3ABk9SR7zw-ZjDaA"
     },
     {
      "title": "Avengers Doomsday Doctor Doom\u2019s Throne Popcorn Bucket Presale 12/18",
@@ -272,27 +272,37 @@
      "watchers": 7,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/227589050785?_skw=doom+throne+popcorn+bucket&itmmeta=01M8A6YH7HY4N1EPVF9GJWTK2Q&hash=item34fd5d51a1:g:CbcAAeSwZmVq46RY&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9dUCPK4al60iPUqC8JNbZ6wDM1Iio6QlZcYFyNjVDBph%2FGTaNadbdgd0RbJvJOmtiwXQ1atOzrlLc5dbUOUZMFnKfx%2FKCtT3reVmrmEPNANmHaKgozkMmI9adKO4skFj1wQaOv9VCCXqPvJRSrrr5ZMtOJdhJtOgXbwjRtrsjZFgu%2FPY0IDxXBYBdnVrHjxwH6FRXA0SwIP1J5d%2BmDKCteFFs5fXgFVy8RDX6cL96Aty5YglqlOsa7BgG%2Bt%2Bl0lf%2Bj3t%2BT1hVDTEZecrTR%2BHPCo94eMa3ErYhFEbAJU0VGMdCtze12ogElFvzmfs%2BtH9U%3D%7Ctkp%3ABk9SR5CU-sbCaA"
+     "link": "https://www.ebay.com/itm/227589050785?_skw=doom+throne+popcorn+bucket&itmmeta=01M8CRYEZM50R9A0T76WXQ45RR&hash=item34fd5d51a1:g:CbcAAeSwZmVq46RY&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9dUCPK4al60iPUqC8JNbZ6wDM1Iio6QlZcYFyNjVDBph%2FGTaNadbdgd0RbJvJOmtiwXQ1atOzrlLc5dbUOUZMFnKfx%2FKCtT3reVmrmEPNANmHaKgozkMmI9adKO4skFj0vi04aNTEYmybQ%2BqnSpBSz4Roj0%2BLvOzsRJ1wvIphBQk0QFiy99C%2FuM1zHKHsFN76DKOWQzFQhrhzTYHPLx8MZ2zV9paBMXrGD%2FNE%2B0rz%2FxeYAi6VDNByAKRhk2q2W9%2FcO3owzJ%2BNN27JbkrXQG72nGxEgd5%2F7lCxr93mWKWRL4kgGMVMFdffOB0Bc2O%2Frtn4%3D%7Ctkp%3ABk9SR7zw-ZjDaA"
     },
     {
-     "title": "Avengers Doomsday Doctor Doom\u2019s Throne Popcorn Bucket Presale 12/18",
-     "price": 91.1,
-     "ship": 17.52,
-     "sold": 0,
-     "watchers": 0,
-     "bids": 0,
-     "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/960175301962?_skw=doom+throne+popcorn+bucket&itmmeta=01M8A6YH7HD586KFEZYWHESREQ&hash=itemdf8ee8654a:g:YgoAAeSwq-BrA0UP&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde86FDOwZgtYitT2tgbKWg8YYl40Fd4D4a0l5i3EwH9yDYIt28MMAQQNPGfXlmPyR7vTdMEC4wnWkm7Lp7CKL8Q%2BZpedL%2BdY4JpBg9jfdXcjlPn6eQ1zi156ky%2BwDeej2JTqWJKFtNX2k6u4W791VV74ZMy3016R8vWQ5NL7l7dib21cLYAUAViylJT9SWhoHuLMkB8H9UH0StMhXjncOyIdb5fQQHGfrpxLZD3tSdIysAdxaEmktpnBYdhtqwbSxiUBpRtvs8qc7g6489%2FnVBcE%7Ctkp%3ABk9SR5CU-sbCaA"
-    },
-    {
-     "title": "Avengers Doomsday Doctor Doom Throne Popcorn Bucket (Pre Ordered Ships 12/18)",
-     "price": 144.27,
-     "ship": 42.62,
+     "title": "Avengers Doomsday Doctor Doom Light Up Throne Popcorn Bucket Presale 12/18",
+     "price": 65.0,
+     "ship": 16.93,
      "sold": 0,
      "watchers": 0,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/257826279271?_skw=doom+throne+popcorn+bucket&itmmeta=01M8A6YH7HFXKJX1JM268H66JD&hash=item3c07a4cf67:g:FtsAAeSwjtlq5WAE&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9vfKYlC5INLKMsjb2a4TkzW6nUPvRDvdSnNESjlCvNwUBYnNp7Rv5%2FDqmKEiRb7jMQRqCACpLAEwuxQFOUMN0SMGnnj%2BuHdUUIipF%2Bx1SRwceWJsLQ6XWIBGyi4gbMaC2SFQ4TQqfWDk3XIbeT6C6hWmpW7%2BYzVzpJyuz8ZcP%2BZb53etxD29DSrZYFQIPVywsBbtFKWTz6CYAmf8GjWaZLEslRKQ%2FA0KGcquPfgNX00M2IjM3KyhdvWKl020D9kvJiVcXf6Iha0%2Fn1FPVbzYPHIL%2F4UIDc359qmwTX%2FCiWfI9CiH8EuPOFNISQUBrVIPw%3D%7Ctkp%3ABk9SR5CU-sbCaA"
+     "link": "https://www.ebay.com/itm/800970409851?_skw=doom+throne+popcorn+bucket&itmmeta=01M8CRYEZJRDPHEYYPFV0VP6HC&hash=itemba7d8e877b:g:aV4AAeSwmlRrCITv&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8MD0jE9j8Yd%2BY66zo4IZn8tcqJa2TRNcocTIDqOeC1Yo6Q9c6oCWbE6yHaYQ7CS5ymSiuOVmtUR0xt9YC%2BuLyzJJr2nwVYIl1%2FHB8ShA808Bt2lGy1e9Wc3TMED9UFuWS3IJqb9X8LaDNFEMfAJzLccm91aPF0x%2BM63LEXbWWywOZ3u6hb5IaeTAZVk6A4s%2BKHzfidWIhCdU2%2F5VpQ7ivmzD4qoQhL8psk8CYu%2BnFBdj3jtXGmn%2BbA1lsdHXZXnF5MZKVQMVVRjSnBrZYerF7lAWy32cxphs7XXRr1w5aS1RWjgj7DaGOYU2QZiCEz%2FDs%3D%7Ctkp%3ABFBMuvD5mMNo"
+    },
+    {
+     "title": "PRESALE Disney Avengers Doomsday' Doomstadt Throne Popcorn Bucket 2026 Brand New",
+     "price": 115.95,
+     "ship": 0,
+     "sold": 0,
+     "watchers": 0,
+     "bids": 0,
+     "format": "buy_it_now",
+     "link": "https://www.ebay.com/itm/960242788313?_skw=doom+throne+popcorn+bucket&itmmeta=01M8CRYEZK2M6NXYQBBWB124KW&hash=itemdf92ee27d9:g:LNYAAeSwhdprB67v&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2FBVzttomAxVQcsQO%2FFI3IsiGTn6XM2%2F3vOipWgMK39HWFohEXE8N6uOlsNuVWFVb8rHdsxJD1NdCzbr2JacfzMBYl%2FWsZMWjnrty1TLihXCWEqZL0hnDGbe8k3DsyiMdrEpLD5PunXlTVbMNV8CpIW3m9iVY2XWJPKFuzp28LBUdqbU3txw6itwQ5EW8XWTh0f4QKRHI%2FX8yhZTCyRdyc6lX8%2BQtEybuyewJJK2L4FXndIYC7x16DkPeAoIST%2F6AdtMRPrx1bPKkf5KdkqgPxC%7Ctkp%3ABk9SR7zw-ZjDaA"
+    },
+    {
+     "title": "Avengers Doomsday Doctor Doom\u2019s Throne Popcorn Bucket Presale 12/18",
+     "price": 91.45,
+     "ship": 17.59,
+     "sold": 0,
+     "watchers": 0,
+     "bids": 0,
+     "format": "buy_it_now",
+     "link": "https://www.ebay.com/itm/960175301962?_skw=doom+throne+popcorn+bucket&itmmeta=01M8CRYEZM9MTG2HQBXK2SQMD1&hash=itemdf8ee8654a:g:YgoAAeSwq-BrA0UP&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2B79%2FKdwvVBbHjna1woMPyrrpZNlqTJhGcodKQyGhErP6tExXTOtZVVhx3Vt8D26%2FjIMaMeMBHYM5zE%2BJz3NUzjQvL4GlnPoxpDJstETRlAfmoEKWVGUl0Bwnbo%2BmueBJ7hlWnqmtg%2BNEQNTz61fB07XhuCuBEr7DZGEzsj%2Fc81MLQekmQ81Azau5kR%2FrTGDHjO89nQcx9S6kRtIPYTupnAto4pNF1ORznVWju84D84lD89phbySehomD4P7ttsrhzdNfMvfcz3TeAxPQ3Ehd1dl%2FuOO1LADeGST7pblLX3eRG7df2PoKt68O84Yv9964g%3D%7Ctkp%3ABk9SR7zw-ZjDaA"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=doom+throne+popcorn+bucket&LH_Sold=1&LH_Complete=1"
@@ -310,14 +320,14 @@
    "median_ask": 95.0,
    "units_sold": 0,
    "sold_avg": null,
-   "watchers": 51,
+   "watchers": 55,
    "bids": 0,
    "ask_vs_sold_pct": null,
    "est_sell": 76.0,
    "basis": "80% of median ask ($95), few confirmed sales",
    "confidence": "low",
    "profit": 20.79,
-   "score": 30.3,
+   "score": 31.0,
    "verdict": "maybe",
    "top": [
     {
@@ -325,10 +335,10 @@
      "price": 95.0,
      "ship": 11.99,
      "sold": 0,
-     "watchers": 25,
+     "watchers": 26,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407325377202?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8A6YK8A7WQWSTRHAPTS9RSG&hash=item5ed67c02b2:g:8QMAAeSwGqJq47OX&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2F0Zp9pcqSCEmVmdDQJtGa4IlUkuExdkBLoIKV9qLt%2Fn2EgKuybN7NqMqQQ9TPJOED3LAnMYDArkTiLTYdS9ycT%2BCSNIMCjhx6KwiRJnRzM%2Ftug6xFEmPJxgrtu59EnHmzK5Bd2bYwBoqmI8OQEId8k44ckqw7e8mK4xf13F%2BKiIk%2FfitDrWzuBNFpOuJkCD7zHL7UxxQ8RQbslD%2B3A9yyimtVZKXMKu6vfI4DwkjK%2F77mpGbdxkXnKT9f7l4LBp9kl5nmsGQbGgEY00U%2Bm63wjK%2F%2B1hcUtdLtMm7fbnf7Qt%2FaH%2FwL3M9756c16szmOJxE%3D%7Ctkp%3ABk9SR8S0-sbCaA"
+     "link": "https://www.ebay.com/itm/407325377202?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8CRYH12R99R1VTFHXHVZF0P&hash=item5ed67c02b2:g:8QMAAeSwGqJq47OX&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9bC8YIR9fEU6HmJOyD4pEMhnuqopC%2BFOG1JF8QFj00GMSKLS4t39p%2BBsjzTqXy8irt0mHq%2FNYvW5rREP5Hj7vADR4PI%2FlmV9aLN4zZPb5WgRmOfxVgl4%2FRbO9Em2Pv4SC1r8a7OjOf8MLoh7dCvkMFM%2F2iB13qpmMWDd371IK%2FjQm%2FxNfHJ9xjuP6fTofSLw0td74BWpDbuxtzK4dnQIF2MKPXPUO%2BBp7Vjzxc2Y9sPyfVUJ7nsvKuQSeTtdvdASsaNL7DbD%2BzzENUD1%2BLKTLX%7Ctkp%3ABk9SR-6Q-pjDaA"
     },
     {
      "title": "CineMex X-Men Sentinel Popcorn bucket",
@@ -338,106 +348,30 @@
      "watchers": 13,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/186694831710?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8A6YK8KR8Z9BDAGW2D1X2T5&hash=item2b77e10e5e:g:e0cAAOSwpjlm7chJ&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9%2BqFBGdCq77Vt%2B%2FkGxi%2F%2B1IKNsyDO1hFK6C0zVAEnLrUHk13TMspU4u0vbvltjLRCpoRale07jtvsyusEOo3zEWPa3eAyjTvCoPbETHacLUH8gthQL2kUubaSijJtplrS%2BAo26mLlgVapz81uzQWy2G6tc5w6lqBLBrPJJ8qM06z0Oct08mQEYs4nEElqyk1lx2YNHkauf%2BwhnpIT1EKgAzQyLPKVa9ulvFX%2BBfxjAfPxNPmmaWTAUFBygUFwwZ8I%2FAqd2RWU%2FJFgZKIwQ2NhB%7Ctkp%3ABk9SR8q0-sbCaA"
+     "link": "https://www.ebay.com/itm/186694831710?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8CRYH18J040XEHHXPJFDWH5&hash=item2b77e10e5e:g:e0cAAOSwpjlm7chJ&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9TdlRYQ5vW8K0hcA5y8fvQ5u3sPW85FUY8sViMRVrX7MdYdE9ZSX%2BMw5Z4nC0FYrPt%2FABfTRZ%2BiZBrwBtmsz4EEzmd0rN11uUKxF99%2Bapdqh8B%2Ba8zRmZIaL2IQYJpHWln5i6594cZVam%2B8oi75WBWv2WMDqN4zGRCug3uZi%2Bt4fePa4HuMfh8UdYEJgFhyo50udzS2ERJRlTiZZGfA3TeDfg5x6htLV4exQOobeHDP63%2BuiBzE0pVWyZRTrp4h9%2BkVybufS2wDxgrvlhDykhzd49HErgGMU57FzPuH5ZjOEr8k%2FYSQvpaMbywW23tul8%3D%7Ctkp%3ABk9SR_SQ-pjDaA"
     },
     {
      "title": "Avengers Doomsday Sentinel Popcorn Bucket PRESALE",
      "price": 104.91,
      "ship": 53.6,
      "sold": 0,
-     "watchers": 8,
+     "watchers": 10,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/920161258616?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8A6YK8ASH6VQEMNMKWKVYZV&hash=itemd63de28c78:g:IOMAAeSwMNlq~0bB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FwaIbWAF67rakaJhE4UoTB%2F1wJlgQYvdnX1ndL%2BImCO53Q7aYtDqrZw0Gc%2B3X2FD2KluBC2dnyRnpJ6xtznHoNXLvVZ6jtW%2F0upjBHpqFk2P2Fv5g%2F6ZgJ%2BfLUATJN0GWwk1PM%2FNhx%2BBXKiwohF0CYjYf8p9Da3vA58Rt1fAp36Q%2F6iqgQk1tC6m8i0NRwnJC%2BsLOcZ17OU%2BJvupHjnSUPWjlLK8q1fE%2BSuYGKJyj1pbrFRdxnkMjilK2QlIz7LIRHynhgjqaDAbfCJnTPnqEql9omKsCptN2ngEcYjMdKUwrYmRzATeNWbxBDip8DK%2Bs%3D%7Ctkp%3ABFBMxLT6xsJo"
+     "link": "https://www.ebay.com/itm/920161258616?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8CRYH128EYD3NWMQ0TEC3R3&hash=itemd63de28c78:g:IOMAAeSwMNlq~0bB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FwaIbWAF67rakaJhE4UoTB%2F1wJlgQYvdnX1ndL%2BImCO53Q7aYtDqrZw0Gc%2B3X2FD2KluBC2dnyRnpJ6xtznHoNXLvVZ6jtW%2F0upjBHpqFk2P2Fv5g%2F6ZgJ%2BfLUATJN0GX%2BSZs3f1y8WkM%2BtuBcZw52EduttcdiVYQp4zJlOkMQD0JFNS2SsJT0scaGUsP700hoMXaTpD5lsOeAk0zxAe12qXnzm1Z8C1pxkgH2KH39XZF4TNE6FE8qSDnJe3FbCrRLfyPfUcv8VX87gbo%2FnOSDn8SiiQ7EtcPXj2CN84cX7s9A1hmTgKUooC9vO18Dypo%3D%7Ctkp%3ABFBM7pD6mMNo"
     },
     {
      "title": "Avengers Doomsday AMC Exclusive Sentinel Head Popcorn Bucket Presale 12/18",
      "price": 79.99,
      "ship": 19.99,
      "sold": 0,
-     "watchers": 5,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/237196755943?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8A6YK8AFDDSYCVFZWH3W4RB&hash=item373a0743e7:g:SiIAAeSwT4BrAY6G&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FfZvgPv0utA9i69SPepNSJxtr2gXgEk1nOq04d2vK7PwyMeNdxP%2FcPWQvOSPc8vxS7YZ9PLKwDFGZiWQkmDgIXYqiNv7Hc85QZrE5vTdbtsBmRrAMYhM2268taG%2Bx4geb0lu13PN0hbxMyh%2FSSADo8WXTYfTvarYI%2FV8YjDoDM21xzOwooKcTMWPFEsLhiTPSEqENQtfDWnwNaaOHAd2f8ndQiYO0m1nutN6%2BUyvlR5YKfSkkFuOwGheznObSMpvjLewdq5aZwW1H2DT1Iq4mBMGUOZAaEYhZAKYm6h%2B8bLd4a6sSnNyyE8DJeeIgrEs4%3D%7Ctkp%3ABFBMxLT6xsJo"
-    }
-   ],
-   "ebay": "https://www.ebay.com/sch/i.html?_nkw=sentinel+popcorn+bucket+doomsday&LH_Sold=1&LH_Complete=1"
-  },
-  {
-   "id": "cat-fishbowl",
-   "name": "Cat in the Hat Fishbowl",
-   "chain": "Regal",
-   "store": "Regal Lynbrook",
-   "sale": "2026-11-05",
-   "retail": 25,
-   "listings": 10,
-   "low_ask": 39.9,
-   "high_ask": 80.0,
-   "median_ask": 48.27,
-   "units_sold": 13,
-   "sold_avg": 40.0,
-   "watchers": 61,
-   "bids": 0,
-   "ask_vs_sold_pct": 21,
-   "est_sell": 40.0,
-   "basis": "13 sold at an average of $40",
-   "confidence": "high",
-   "profit": 7.71,
-   "score": 29.0,
-   "verdict": "skip",
-   "top": [
-    {
-     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl Same Day Shipping Cinemark",
-     "price": 40.0,
-     "ship": 19.18,
-     "sold": 13,
-     "watchers": 0,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/800827718279?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8A6YV9PRP5KGM2NSP271H1F&hash=itemba750d3a87:g:MhAAAeSwAvNq2tPB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FZFV2Ac97HrnldE8EE63D0%2FH1Bbozv%2BzVStTnn50wuF5ar9IPozb2fhvRyMUR9wJ1JbaEw6n7F7gqJ2mxBhDsJfDKLo2%2BUfPzA3AMSo6269gvBu4ihV2xN9SGrQ7xSBj0EyIgjN5t7%2B9R5mwABgcrLxy%2Bb9wkPNpkz4mZHmPPinhE8ydB57JpkYz5RFgr6BvYTFN010EWWdKa2v648cQGsEJQJBAVCuDiuVS595ZUjZ3MU6nr5uqvfcJ05CGEHX%2BDPisU%2BVJF3SukSCcEV8g%2BnXyfnyANbV9%2BQNvDnUVM3I9NuFRR7bjyOOuaCo2Odwg4%3D%7Ctkp%3ABFBMsrX7xsJo"
-    },
-    {
-     "title": "The Cat In The Hat Popcorn Bucket Fish Bowl 2026 SEALED",
-     "price": 40.0,
-     "ship": 19.18,
-     "sold": 0,
-     "watchers": 24,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/800827723047?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8A6YV9PX09V2BJM863RHZS5&hash=itemba750d4d27:g:SNgAAeSwg5hq2tPB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde97qLVTrW7t1ObSaJEmWV8VNYeogOmxwjXocCd5JeGjFH4g%2Brl2kdYFXbHTXBkj4WSlrhmhO18tDVhrQJ51KHkzodOjSeJ1kizTDO5Z%2FqNxcLnk1Udec4oETdy5seGd1vOTTgVA8Iz0MuwsWs8z1s%2FwkQpHJMAAiFIbN7%2BrJakukytQXYAAfp7%2FLx%2Bsjz7VXw6ufcfXg6m9GpbSmDBii1bAfxCd0EdjQMKBRN88x3p2fltjMwQe1xXtAqt2fUiXYTbPbUOOh3YrcDDZRdABSZqf7vff5U4dBJt21uxh4TnSDO0J0sKzj1NBYTXSneiulQ0%3D%7Ctkp%3ABFBMsrX7xsJo"
-    },
-    {
-     "title": "The CAT IN THE HAT Fish Bowl DR. SEUSS 2026 Cinemark POPCORN Bucket + Bonus",
-     "price": 42.42,
-     "ship": 15.95,
-     "sold": 0,
-     "watchers": 21,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/900048273239?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8A6YV9QPHAGDDN69PY9MTEV&hash=itemd18f0ebf57:g:4KEAAeSwfdpq4wFg&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9SFGJCz7L6YdG7uflEzvfKdCZJHeJJyuvqzRUgpaNptV9h1Gw%2FvtRDIhe0PUxhT%2FnCMIia9XFFVAfQArhAOUSZ52A2FkV7vzt6FdjNlaSA09eb34EY7Gm9YF739IsBDAH0bTiH2eNL4A%2Fosw20S6NP6ngOvC5lcdjAcxYGYuO2qjbs1ov31%2F%2B6L3iEvDLP6oR2pM16WrEGF0KY04MKKWqSvlrdKyhTUCCurmiWHV%2BbyzBW%2BoCkRCErN70P1e9lhcRPLme0xIUOaSO7F6hXjRrp0FDYhR06jCsQY%2FaGGSQno6gJPC7tWsSbH%2FoIxLzdPog%3D%7Ctkp%3ABk9SR7K1-8bCaA"
-    },
-    {
-     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl",
-     "price": 50.0,
-     "ship": 5.0,
-     "sold": 0,
-     "watchers": 10,
-     "bids": 0,
-     "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/860129212847?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8A6YV9PSWP97TH8T17BWDFA&hash=itemc843b239af:g:~VoAAeSwo8dq8mD7&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9fjtI6M%2Fj%2BQZqqi08AX2htxotJenr8SG9ivdh1qoW1wD7eck6lKbdYeSBeeecnBwiIJi80db%2BWcotcdKzIBeQW3ygFyB5YQNmUZM8qDUv%2Bbeb3GBhpI%2BkLYQzdcXzfcy08LFgK2cLC74MJeEwhfnluVLu7ISYRPMEFhwS0HmysIMV0ONLB3J62rspqP5SUcHlAwiY95fZWMoNNMDHMwmmM6p4ZawS1OQIAg9wf8ILXQFUBcUA%2FdcsNgW%2BrD081VoPpSR3f0lnuq2p4Shb6pZNowSJo%2FCiyP6kFupcSY5KS8Ct4Cw1iHfrDEYODcW6R9%2Bc%3D%7Ctkp%3ABFBMsrX7xsJo"
-    },
-    {
-     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl /Hat COMBO SHIPS NOW!!!!",
-     "price": 80.0,
-     "ship": 19.13,
-     "sold": 0,
      "watchers": 6,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/920104919159?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8A6YV9SPCN0MNCFNQYCH3M4&hash=itemd63a86e077:g:yJUAAeSwVsRq6h6s&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2BKQ%2FIYXlyC35BgzZQavSexUBbcVTH0RDqCQoORkeJQLeJaRyniUq9NiyGCG8WvIeJLQswCWM1GPCz5rJDLFlUNGIXBDRN5OoTWzENv6G%2Bfup9COpsDCrSTJeZ9POH9xxXp%2BtNBfyMo7ZgqwfwLRWSb0h8X6ro%2Bh4mzsbXEpRcT%2BX6IOmy%2FUh%2FY7imkfQEYWVfuYkC0sn1fp01h01T7r5joNbR3KiNx90JnrnngeyQ%2BfuI%2BDH9atCoA%2Fo%2BXw7yIzmGhdswNfAcsloY4G%2FMN0yLA%7Ctkp%3ABk9SR7S1-8bCaA"
+     "link": "https://www.ebay.com/itm/237196755943?_skw=sentinel+popcorn+bucket+doomsday&itmmeta=01M8CRYH128QNC7QGVD8HB3YG6&hash=item373a0743e7:g:SiIAAeSwT4BrAY6G&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FfZvgPv0utA9i69SPepNSJxtr2gXgEk1nOq04d2vK7PwyMeNdxP%2FcPWQvOSPc8vxS7YZ9PLKwDFGZiWQkmDgIXYqiNv7Hc85QZrE5vTdbtsBmRrAMYhM2268taG%2Bx4geY9DcVqlWvabuZGWTJ%2BMysETyGxGLeRpjRrGkDgIUsKa4vw9RcfQB03qKf9SBe6I8r3P32o0OrCPotmwZ6q5nub0P3oW86vy1dwu6ivzRtYkDxJoTpgE2c2vVioFMW6u5loVjKK22ud%2BJBEYxNJ63Pdl3Mlttk82dSP%2BH1ArD%2FTiQuxv8Zgys4Tsj6A3LdrI7g%3D%7Ctkp%3ABFBM8JD6mMNo"
     }
    ],
-   "ebay": "https://www.ebay.com/sch/i.html?_nkw=cat+in+the+hat+fishbowl+popcorn+bucket&LH_Sold=1&LH_Complete=1"
+   "ebay": "https://www.ebay.com/sch/i.html?_nkw=sentinel+popcorn+bucket+doomsday&LH_Sold=1&LH_Complete=1"
   },
   {
    "id": "dune-sandworm",
@@ -446,31 +380,31 @@
    "store": "AMC Fantasy 5",
    "sale": "2026-12-17",
    "retail": 30,
-   "listings": 11,
+   "listings": 15,
    "low_ask": 64.59,
    "high_ask": 118.02,
-   "median_ask": 70.0,
+   "median_ask": 79.99,
    "units_sold": 0,
    "sold_avg": null,
-   "watchers": 40,
+   "watchers": 42,
    "bids": 0,
    "ask_vs_sold_pct": null,
-   "est_sell": 56.0,
-   "basis": "80% of median ask ($70), few confirmed sales",
+   "est_sell": 63.99,
+   "basis": "80% of median ask ($80), few confirmed sales",
    "confidence": "low",
-   "profit": 15.77,
-   "score": 21.3,
+   "profit": 22.12,
+   "score": 30.3,
    "verdict": "maybe",
    "top": [
     {
      "title": "Dune Part 3 Double Sandworm Popcorn Bucket PRESALE 12/21",
      "price": 79.99,
-     "ship": 19.46,
+     "ship": 26.1,
      "sold": 0,
-     "watchers": 17,
+     "watchers": 18,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/227589280814?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8A6YD6CWD65FCVWY1VV10AW&hash=item34fd60d42e:g:CnAAAeSwexBq4923&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2Bv4mRXaxQtJCVuYfOCqfPuifPa3Al19Qyov1fy3gsALlIgvwkDZscJZ2f%2BcJT%2FkDdH1STaNUwnDyb0jYP4ovYZaI%2BDCmnDkLmqHd0WBjcmacHVPQCUY2RHf3MQCsWVXFPn8%2B1kpkVm5uPAwwl3%2FZ87HHHjeaUz5%2F4wQZNVEIMLGo1a%2BlXN4nFjQ46TYRN8CgBCpinHpYpBu4afk8M8%2FI1dl%2FXxgAzrkQsEzNRCH8dIUIUYEk0Gs0gscis5NiqyBMWgJAUlIFyz62BW%2FZB9sqoL%7Ctkp%3ABk9SR8zT-cbCaA"
+     "link": "https://www.ebay.com/itm/227589280814?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8CRYBJAG43FC0Q474QE91E3&hash=item34fd60d42e:g:CnAAAeSwexBq4923&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8XYJ%2FVvoAIxPBEzlZ1YyKU5GmWwLKExwKu%2Bei2oyOplVd5hi%2BWtF5LHrmAAFHVuaZJTo5KPZ16Uj%2B8t166CPkJz3KxAmOKHTjf7re88Oic%2BkOO%2FLVOCbBjiBng6aWSEoO%2FMFVwNk0WY8ZhmXFyGHN94Y6mVoo1srq7jLPJkvGNcxmD2C6vk9L8w6rz5vXFIcKIE9vHMvX659%2FVzZL2P0wdQUDS%2BAufbfoG5RTG36aehkAHS7fzEgGvkj5M9xiNwWkV%2BXqITPoyDPN6Tuv23at66TZJkT4gt04a0MiW4qrL1lFQ1GNUlTYS1eZAubtked8%3D%7Ctkp%3ABk9SR7i5-ZjDaA"
     },
     {
      "title": "Dune Part 3 Copper Sandworm Popcorn Bucket Cinemark Presale 12/18",
@@ -480,27 +414,27 @@
      "watchers": 8,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407325192796?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8A6YD6D1XPMD707G5588VST&hash=item5ed679325c:g:oeEAAeSwMQdq5B9q&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8ZZmHacI8N%2FgtnGJzbzkiw4WFC8FHw8oLE9qr9fpAdfhWWoi2%2Bp%2BQVf9KQQImxbQDPGXVu71XDj2PsSWO3oan4c%2FMMS6TG4ExhHNFHgUYMm0aBWG32aiPOFla3XY23FMdaeXcOYjMs35xIzOorjXWR65IWVKzTIuNFmwTeJydoyRCFlfTIpwHx9OAwNn42eG9ZANkFIb5pNoF6dhPWEY0Q7Bu3tcd3ddkd5cKk9kgD7dP9bNkdNa2O33Tz1b5yYBGO%2Bvns5LSFm4vbqH1BucXfltsj3WfAPN2enKkK1gWXQrktx02n9PrJJAD2yzdAvxw%3D%7Ctkp%3ABk9SR87T-cbCaA"
+     "link": "https://www.ebay.com/itm/407325192796?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8CRYBJA1XMN5WRAW44W9CWN&hash=item5ed679325c:g:oeEAAeSwMQdq5B9q&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8ZZmHacI8N%2FgtnGJzbzkiw4WFC8FHw8oLE9qr9fpAdfhWWoi2%2Bp%2BQVf9KQQImxbQDPGXVu71XDj2PsSWO3oan4c%2FMMS6TG4ExhHNFHgUYMm0aBWG32aiPOFla3XY23FMcPF3YvOwHjOyYoUZa5beEylUIp20aT5NK33nXE4dUS7o98FqFZ5o2hryUzXxBHM%2FhC5UwdhTjbWy%2F2innmIH1XWm5ggjCWCgm4gnX7uzBA113klQQ%2BgaZ6wOjeS48s5OTVR%2FK9EDlGHSUD4fnEE2%2F%2BeUxpiFcM6kCtbrxvHhfBEAIEtQAnXNp0kBDc5St8PMc%3D%7Ctkp%3ABk9SR7q5-ZjDaA"
     },
     {
      "title": "Dune Part 3 Copper Sandworm Popcorn Bucket Cinemark Exclusive Presale 12/14",
      "price": 69.95,
      "ship": 9.99,
      "sold": 0,
-     "watchers": 6,
+     "watchers": 7,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407332681279?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8A6YD6BBPZ224NBDAAEFFDP&hash=item5ed6eb763f:g:R64AAeSw9tNq5~uH&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8KBSrvmLZ7efN2VRKGTeIKuqj6ZQyPbYDnbsZoAj8tWww4v3va2YB1Si84jGaLdSyPpy2AmSYWyXWGpYs5HvjIlbgNeDOKQa9YbVhES57x9D866h1qHbfhqhPS12a9%2F2N1rjNqnOVCWeMhB%2FozkMMxbBdXKvOsCmZXXv5mbjhbv%2FbVvLGxrOWZrFeGTj3yMP1l9CfOk8arq1%2BpY9E%2BAsLI3P%2Fb5OgRxZ%2BPIlI3ODfpFsj9N8sDb%2BqyuRA0j7Pe3uE8FGeOd1avQEIF0qwP5LMRb68y9TAoRy0fw60pL5DJjelvyTN16psEgpxIfhQ1uI4%3D%7Ctkp%3ABk9SR8zT-cbCaA"
+     "link": "https://www.ebay.com/itm/407332681279?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8CRYBJ9S9QBYR1DXKR6JZXF&hash=item5ed6eb763f:g:R64AAeSw9tNq5~uH&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8KBSrvmLZ7efN2VRKGTeIKuqj6ZQyPbYDnbsZoAj8tWww4v3va2YB1Si84jGaLdSyPpy2AmSYWyXWGpYs5HvjIlbgNeDOKQa9YbVhES57x9D866h1qHbfhqhPS12a9%2F2OosUy%2Flom3C8YXXCzOAW5u%2FhPVuzsdgCTZO2tFq%2F6F8DcQNXctnEuD%2FNifH%2BPeMtppHCwgAvEYRnxiIIQwY37H1mmcDNwV8I%2F9bUUneLdN9ctHEqMO1wfVYiwcVHrznDVzTt7u136Vl2DEup79xDz6yjleT6BKRxE7LycXpmRQ6tXDe%2F1q8NXeN3ZOtZANrFI%3D%7Ctkp%3ABk9SR7i5-ZjDaA"
     },
     {
      "title": "Dune Part 3 Copper Sandworm Popcorn Bucket Presale 12/18",
      "price": 64.59,
-     "ship": 20.93,
+     "ship": 27.35,
      "sold": 0,
      "watchers": 6,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/168825630562?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8A6YD6GX6NECEWC5YJ598V7&hash=item274ecaaf62:g:IwQAAeSwvlRrBZea&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2Bi3ud6fm9jgNBfDGy3vQ20bj%2BN160%2Bya7HkhgdNyKt472GJMN0DCPUhZwGuwpA30hR9VrKpNkyckaATsAB12oM0H9LV%2FpvLbMl77Reh5rzljVDWI%2FkpaaaOc1EMUpYHgbC%2Bdr9LwBPJN%2FCqzMTVBAkAzxCZIMgcZWzgSW%2BzWqq8qSg8i0yoyGUFENBCXaguDMGia4AGYJAF4WhOQWicOBAE5x28Hs4FUitU8JpDymhd9ayau9Tyk7m3aqi5nnOGKK6NlBYbTRA9nrdoJHl%2BDlW%7Ctkp%3ABk9SR9DT-cbCaA"
+     "link": "https://www.ebay.com/itm/168825630562?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8CRYBJD1PZ3F0AV3A4810D5&hash=item274ecaaf62:g:IwQAAeSwvlRrBZea&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9yEpcW8aqVYNTveVwMPHj1%2BE4v87YDmqx61%2BhXs9xDvGC8rXUrZ%2BQSJ6TBe80mcH%2FwePK5x7iz2sNJhKW7veeNR7WW7oSgYVh460Z%2BMiUk%2FJB5dBWrP%2BZs7yfPdNLC6NmyjF7ZV2Sv0XWbIUvGRZYPWsbDQT137fBWoLbGsV7nasuXQspUYdi%2BJOA9Kwvg8vPgeEPR6yYfAc5cdEmkVWqruSjor4UGy6tNJUmmLaSpNpyi4ZECGH0Sy%2FwUNEGqafI%2Bm1R1fdPXYcUd9nXyOqAPcnyeFgFNsHeHMTK9u%2F4lSp%2FJDvXOutS4PiwuO8s3ZTk%3D%7Ctkp%3ABk9SR7y5-ZjDaA"
     },
     {
      "title": "Dune Part 3 \u2013 Sandworm Popcorn Bucket Presale",
@@ -510,10 +444,86 @@
      "watchers": 3,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/920157967126?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8A6YD6SBJ3HAWT5X001HSB7&hash=itemd63db05316:g:Cx8AAeSwZhBq-DNr&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FksJmZJW8op%2F7X7dsab%2FVX%2FogISTVZWkGKZrIJpHVtNQHpx70ZIBZq0U8SmuTGVdQQ%2FjS0RS4Ht1jZE06VpMatXgfxjcgcRU5we1P0TBJQela0qaURUuAQzcC0GQ8u%2FMxcHwipao9JcsoVyYWiPJHOPRxxZlmEu5OYrKD5WfvuMNhdxbjv8HdBSS0w7agtkQ0rXpv33X49kBPAsxM6KpcklhBj19xqpLkRRqWoHna%2B3CqGOMzKF3h4pd0%2BlOiS2%2FFxrR3Kj%2BMChIjjuXt8KohK6ElxsnaX3f4N3vqWeledhxXZZbqd6HJUPrcIttn7YEY%3D%7Ctkp%3ABk9SR9TT-cbCaA"
+     "link": "https://www.ebay.com/itm/920157967126?_skw=dune+sandworm+popcorn+bucket&itmmeta=01M8CRYBJJFK7P01AAYB0F1G3W&hash=itemd63db05316:g:Cx8AAeSwZhBq-DNr&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2BVPwlutitgeZn9Kv0nuRS01Sj6JXygD99QK9qlVmlmPAEhAEIg4kyb03yvQJXlUqksFue8icQYJ5ciNICD%2FqIZSb5%2FjTobfQlfVCYVMPOD8Id9j%2FAwqUsJ%2F%2BdZT1mzIlBSYR4Efxhsm9uPQaXeb%2BH8DgJGosWykdq8u3zNuZjMFXhjnbQkojRZmTg7Pio1Ykd9ZjxmkfG3xUlkAalNne1nhc2Hye9KWYHCqLSpisQec3W75Yi%2BFXsrVImYsuyYv5N3L6UE2%2B9IhDDy4P96SVHE%7Ctkp%3ABk9SR8C5-ZjDaA"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=dune+sandworm+popcorn+bucket&LH_Sold=1&LH_Complete=1"
+  },
+  {
+   "id": "cat-fishbowl",
+   "name": "Cat in the Hat Fishbowl",
+   "chain": "Regal",
+   "store": "Regal Lynbrook",
+   "sale": "2026-11-05",
+   "retail": 25,
+   "listings": 11,
+   "low_ask": 39.9,
+   "high_ask": 80.0,
+   "median_ask": 49.99,
+   "units_sold": 13,
+   "sold_avg": 40.0,
+   "watchers": 63,
+   "bids": 0,
+   "ask_vs_sold_pct": 25,
+   "est_sell": 40.0,
+   "basis": "13 sold at an average of $40",
+   "confidence": "high",
+   "profit": 7.68,
+   "score": 29.0,
+   "verdict": "skip",
+   "top": [
+    {
+     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl Same Day Shipping Cinemark",
+     "price": 40.0,
+     "ship": 12.21,
+     "sold": 13,
+     "watchers": 0,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/800827718279?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8CRYRTKMKGWQ198B07V1W00&hash=itemba750d3a87:g:MhAAAeSwAvNq2tPB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FZFV2Ac97HrnldE8EE63D0%2FH1Bbozv%2BzVStTnn50wuF5ar9IPozb2fhvRyMUR9wJ1JbaEw6n7F7gqJ2mxBhDsJfDKLo2%2BUfPzA3AMSo6269gvBu4ihV2xN9SGrQ7xSBj2amtziHG8hfh3YIXaUANjwQI3eE8MF8MeDLgTj0tm7hqDKLAecu8xt2dgpHsuh6XUSRAjxgDydNQI8VMrpFqGgLQbvXOCL5x6ic3SeiVFmiLteXCniGlUUm3tkgkk4it9uCblUz30Cx%2BsQuF1fiIH5JcpuWBNbMDjdJAtFj2cNu9OjOy0QKygTxizFcO955Uk%3D%7Ctkp%3ABFBM5I37mMNo"
+    },
+    {
+     "title": "The Cat In The Hat Popcorn Bucket Fish Bowl 2026 SEALED",
+     "price": 40.0,
+     "ship": 12.21,
+     "sold": 0,
+     "watchers": 24,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/800827723047?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8CRYRTKGASX31FH4PPAN8XJ&hash=itemba750d4d27:g:SNgAAeSwg5hq2tPB&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8ep3QkG25s%2FihAPsGHaK9InG04QyX4o9nZSqQAlYzRnRnbdA29GiD%2BTk5OkPJp5YMy3I2LeSyUE0wORaz00sqSAED2BfLMWBllfwdc6%2B7gq3hoxhiZryx7pxh0%2FSQdYbc0IBeSdVZKZWJwb5P7ig7g%2Bcc5QA9hlMmmAhf2eJ%2FZTcbhtAgM%2F54ZvdO5%2B90Qo%2B1a3yHmQAVgCQuS1WbeUCLDvmVQDS46velAFbYIHa%2BVW3BDEtb4X5xtuS0%2BBQ65f6pCx5f8Kn6hI8wW35YftgTozaQGVXf3nYvkWJLR9JdeuK4zgDcSG9bneDl%2FRrCczxI%3D%7Ctkp%3ABk9SR-SN-5jDaA"
+    },
+    {
+     "title": "The CAT IN THE HAT Fish Bowl DR. SEUSS 2026 Cinemark POPCORN Bucket + Bonus",
+     "price": 42.42,
+     "ship": 15.95,
+     "sold": 0,
+     "watchers": 20,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/900048273239?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8CRYRTKZVCQ1TXHWKRCA7S3&hash=itemd18f0ebf57:g:4KEAAeSwfdpq4wFg&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2BwE%2BuA%2F5b6fI1iAE%2FBTLmiGyGIyxAQYPJSp3ivL0nKrAg66gHrT7%2FeHAEiQUh4e98iidavXCLlt5x6Irt2x%2BacV0vsmMSAN9LJgHqOXWBmxqUb1oViKDGVHg1oYcgU9R0K2HaIt7uLg8Hh%2BwXqlJZkUTQYf%2FZfQcm0xmtZz%2F30wPHBg1jLSiEoYwTkJ5ZatYp2MtNUMZjDoRFUbbwkMkgD%2BovWszx1aB5GJadg9388czieBdf%2FDPVPny%2BMZu4UPc9RGBEdDZkhp5sph1rxwb%2Bp%7Ctkp%3ABk9SR-SN-5jDaA"
+    },
+    {
+     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl",
+     "price": 50.0,
+     "ship": 5.0,
+     "sold": 0,
+     "watchers": 12,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/860129212847?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8CRYRTJ9N9CN5TSDT1BBXEP&hash=itemc843b239af:g:~VoAAeSwo8dq8mD7&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9fjtI6M%2Fj%2BQZqqi08AX2htxotJenr8SG9ivdh1qoW1wD7eck6lKbdYeSBeeecnBwiIJi80db%2BWcotcdKzIBeQW3ygFyB5YQNmUZM8qDUv%2Bbeb3GBhpI%2BkLYQzdcXzfcy1GrrVgUzPwZIWd5611ivBuKKgyLI5OB9WfE1vYBaU4VYN3aK3%2F9ftTG1ZkZZv44RDnkqO99mdeZJzXDHuqzCpPTQyCzEz46%2BmyzvUQNrDuLPu3C7cOU5vQqELZcR0MfWbPclzjeqo%2BHxkpBDu5C0YzJkbBxq5HINqFDA2Mq%2FI0Bhi5pOePeFnDb7NhC9kFpck%3D%7Ctkp%3ABFBM4o37mMNo"
+    },
+    {
+     "title": "NEW The Cat In The Hat Popcorn Bucket Fish Bowl /Hat COMBO SHIPS NOW!!!!",
+     "price": 80.0,
+     "ship": 22.6,
+     "sold": 0,
+     "watchers": 6,
+     "bids": 0,
+     "format": "accepts_offers",
+     "link": "https://www.ebay.com/itm/920104919159?_skw=cat+in+the+hat+fishbowl+popcorn+bucket&itmmeta=01M8CRYRTNH92Y570PZ8AD5KY9&hash=itemd63a86e077:g:yJUAAeSwVsRq6h6s&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FQJ97Bk5Umaoz7GmZh5WtiQy1bnPxpx50hYE4uuHGo%2Buj1cbnhh0nqMRjXNCu7sRpuN2DHkmM0b7zb0D%2BoLAnVfX7rGeOPa6NZVXNfTkc%2FRm1L0me8oZi2UPkFgIk18uXRG8zylYZV5K7ENDHzQbkjWW7DfQheFmP%2BCLECvBaUxOFkM3tNu6FGiR4Ic7l6hcL0%2BgBN6dFY0l8GPq63cYY%2BBhWnsjjO5oc74VafCgfE3rcR5Dky4xYF9enWi6RRRcY4JDtRscQRtSAYLWwOxKBrLSlmuPbawzUiCiHna7jKYbx1Fmq1mWZo8U0THJvA%2BM8%3D%7Ctkp%3ABk9SR-iN-5jDaA"
+    }
+   ],
+   "ebay": "https://www.ebay.com/sch/i.html?_nkw=cat+in+the+hat+fishbowl+popcorn+bucket&LH_Sold=1&LH_Complete=1"
   },
   {
    "id": "dune-navigator",
@@ -534,8 +544,8 @@
    "est_sell": 61.99,
    "basis": "80% of median ask ($77), few confirmed sales",
    "confidence": "low",
-   "profit": 16.31,
-   "score": 18.7,
+   "profit": 16.56,
+   "score": 19.0,
    "verdict": "maybe",
    "top": [
     {
@@ -546,17 +556,17 @@
      "watchers": 13,
      "bids": 0,
      "format": "buy_it_now",
-     "link": "https://www.ebay.com/itm/407325252338?_skw=dune+navigator+popcorn+bucket&itmmeta=01M8A6YF8J51S701QV0DM0P12V&hash=item5ed67a1af2:g:OkoAAeSwplVq5E4h&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8lxWF0x%2ByrEhFXSXNCq8w13j38Yaf6oe8DxhEs2uVDQYeeozlxzlLKur31N%2FmdZtmv8hDJmRfYSy1PdaFCV99B8hsANxRTF1mbPSTwIt2lNaPKJx9IVvY5%2FFG2jvtmrknqncIej9gZzt3Xv%2B%2BBSQKg9E3kkgRmeuaZC3foK86VlsRWsZ0Ktos1PlFEUnN3w1LjaAcQdmcFDKFaAFi5J74XkZNSJ9fXE7uQE7D0Wy6fbUsigjpK633PEYWLNhHVy3KHHHY5TwpIGWu6xX%2B%2FxGeM%7Ctkp%3ABk9SR870-cbCaA"
+     "link": "https://www.ebay.com/itm/407325252338?_skw=dune+navigator+popcorn+bucket&itmmeta=01M8CRYD2WM7T1CHJMFGFM5N4D&hash=item5ed67a1af2:g:OkoAAeSwplVq5E4h&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8lxWF0x%2ByrEhFXSXNCq8w13j38Yaf6oe8DxhEs2uVDQWdFp0jLH97r%2BBBMuam9WHnywnMruWU10vtG6HoOhbBDkHF7DMhlsvMD2ZDOrAe6cD3acQzlv89AhMaE%2FndNCtS5p3Oz6c9eCcxwpNvmUW1xW4S0y8LL9ivJ%2FR6lKrbHVXu9P3F9ALi9bT%2BNdjApj8DRcMxEgC0B0mK0aAu0hcblOFoyzYFxz%2BzXlEXTnQpDNVyXGqfAIPXojCK8bxAzVv9EbRS90r1H1IrOKnMTkTCa%7Ctkp%3ABk9SR9LR-ZjDaA"
     },
     {
      "title": "Dune Part 3 Spacing Guild Navigator Popcorn Bucket Presale 12/18",
      "price": 69.99,
-     "ship": 19.16,
+     "ship": 15.5,
      "sold": 0,
      "watchers": 12,
      "bids": 0,
      "format": "accepts_offers",
-     "link": "https://www.ebay.com/itm/227589285797?_skw=dune+navigator+popcorn+bucket&itmmeta=01M8A6YF8KCS0XEFJHTT0TS5YH&hash=item34fd60e7a5:g:dy4AAeSwNkdq496o&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8spF8ha9OlZ67eCQ5NhxhPW8C2AEhOU%2BQaX9M8D6L8QMykzejtvmrAXWgnoi6rRRrXMxWSqURxZVWe8gnRFLKTXXC7sJSS%2Fs1Whr2JvnIPxIAVvyxZTZYWtlOG94qsLc6REkSQvKkPGMvN83FJyE%2FCpDluTueL5cj5Taa5vi%2BDtVmJrezepcnixG8R0gTrJuslt94BwBIhq8Djdj7kXF1ViGM9iNkMuS4m1OlG5Fd7OkhDNEneaAAM31U0g%2FPBWk%2B0rdjualGjVW005LZpO5hH%7Ctkp%3ABk9SR870-cbCaA"
+     "link": "https://www.ebay.com/itm/227589285797?_skw=dune+navigator+popcorn+bucket&itmmeta=01M8CRYD2XSYEQ8GZMNRBMD0SB&hash=item34fd60e7a5:g:dy4AAeSwNkdq496o&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2B0VvHUAyQAXKNXhaeeNGMoDsiKrMHwcV615lvvl5%2FQxA2PHbM%2FdFK9jWTyFujfdyB66Awq1RwOObGzLcHV2pJNHi5W6GSEkcKDwsmTz28rfe6lEITRIqYRstqeEpbIxA63j8uYQfW%2FwRAzkvV2UlCiYcOiXiolp77Tcvtco7%2FJM%2FovXVacFavuuwdAX0n7wVnjQ2%2FFtfXj1GiwPPfl9V8MEaCb0Vq4Kgso3LkhDOp1rLGmRd3QknVHrA7Gd6F8P7WZQK2092dnP38oOlm%2F74rM2dQmeFRVQ%2B%2BggQ7%2FoMuIGsyFZ5UV5OpUCOKzZm6uTy4%3D%7Ctkp%3ABk9SR9LR-ZjDaA"
     }
    ],
    "ebay": "https://www.ebay.com/sch/i.html?_nkw=dune+navigator+popcorn+bucket&LH_Sold=1&LH_Complete=1"
@@ -566,131 +576,131 @@
   {
    "title": "SHIPS SAME DAY The Odyssey IMAX Film Camera Popcorn Bucket 2026 Limited Edition",
    "price": 64.99,
-   "sold": 73,
+   "sold": 76,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/198509370527?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4D8TK8R454R80Q0FE7&hash=item2e38149c9f:g:IPwAAeSwskFqh-5s&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8aeVyDwC8%2FB8y3jAl0eoYuA9F5CsCGSgwfDWqn%2BApV%2Bc%2F0ex6aA6UsWRef%2F7gO0d8UGvXocissyd17rEEoGV9DZFsHLG3TKFS361wZPDckRuIycojsjlzvSlgk1NIYJ2RAWpTR73T5cQlvAcqbe2vwHePJe6Dofh%2BaucWq5%2F1irXGXZnTpy9duikh9E%2BcJHJnzBJ1E9YHfuHz6KbLSBK%2FwCwmYd91EDRUNq8i9OqqMQGMr%2F0TmBIS8XLnuJCHh%2F%2BQnSGWen40Jlg%2FLZ3dApn5pZNpM80jO8csqcmkk6qvwTA%3D%3D%7Ctkp%3ABFBMxtL7xsJo"
+   "link": "https://www.ebay.com/itm/198509370527?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMC56BEHAZAFGFVSFEE&hash=item2e38149c9f:g:IPwAAeSwskFqh-5s&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B%2BTBkZACA0pUuWJnmyQccmYr0toxHGWQLZeeDL%2BQwa%2F2ZXW778r3JGZa%2B3LsJUvtvUypXK5KOwauUOffonFjQAEHvz2buNFWImHHk9dUaPmSr%2FzSYS3ujO5u28VPR%2BVWJfAw82gUeDoQJ1bTWW%2BnVxSQmzWTUIGg0tzmUC7jYszZfN%2F%2BzrE%2FCsCMfrEeeeDpAisPVse%2B3mWrbM0di%2BRbU9nfs2dbYs1wOe9crsL064ZLh7yJw3xOIvlaZhwVCQZb77pY0kiik5l9PJlQTNnb%2FRxJZzBAiR8Q6f2QxDk9LXxw%3D%3D%7Ctkp%3ABk9SR-Sq-5jDaA"
   },
   {
    "title": "2026 Street Fighter Arcade Popcorn Bucket Tin NEW SHIPS NOW",
    "price": 24.99,
    "sold": 69,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/168790623020?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4CJ6AEENNAN1F0VFBH&hash=item274cb4832c:g:WV4AAeSwfwBqzpeK&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8n0sTcFVY0LCPf4CyRAgDm6gTEMmpEkd5%2F8BuSqFcGFI7Sjwu4RzJ1tr59l1yHVWso8%2FlGKN%2Fb7cxzuBLMAjvdeYchVuZzEUir3C768yt51411aNUMJ4xy%2FCayMnNHNk7u3D5fhuHnmijduPnlYEw%2B5AO7UDIvoySGltlxETZWzGt%2FhDTiVr8fnUwpYljdADjrrbdOhbaawWPR15X%2FVK1DuX9RKiBh%2BJijm0MjJzqFuxIFYTzAxarsAeLX03w3ErmiN2e7k5bc9Ht6YIi8SL4M4VVd9PJ6ksYLIAjZPnWqXw%3D%3D%7Ctkp%3ABk9SR8TS-8bCaA"
+   "link": "https://www.ebay.com/itm/168790623020?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMDDNADWZ3DGD93KT7V&hash=item274cb4832c:g:WV4AAeSwfwBqzpeK&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde%2B03h%2BXjKxbO7zOvg%2FfSehe9sO6k6cldUyrjZdTGd%2BNuDkU%2FxOU5Fysenj3DxHUdj%2FOZB6UDdE8A2vdVhOVX7Aqanx4Fs1Ko66B7FuXN1Q6vrQ77GnbJI9jAplX4lRZ7WSM0C--kj93Zxszyl774u4RWM2WMJFX8slsVBO22ZU7qX5VxeI71hkeoa3WZQItEPmCf82l0IjPYqQndvUz5Q0XeVUEd%2Fpvo8xN8%2BztXR4mb5n%2FafI5FqRjhexX6WoqvmU%3D%7Ctkp%3ABk9SR-Sq-5jDaA"
   },
   {
    "title": "Disney Parks 2026 Mickey Minnie Holiday Christmas Train Popcorn Bucket PRESALE",
    "price": 79.99,
    "sold": 68,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/960154256313?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4A33BNQSNV946C6KZJ&hash=itemdf8da743b9:g:cmwAAeSwpVZq8P9x&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde%2FshCgYKOsHXkEnilcDTH9KLOoDSSZIlxuoP9DlBthiRblGq5ldIGXUAMUVjp6XVRNekBjBZ4kuhzpEKbUNtfsZSdbmLMfUoo%2FZqvRJ3VU0Ancu%2BFoxX%2BeciDfUP0MRBpQiAcjJ%2Ff7XSNTboNCeaTNY8hBKB%2FPK79REFxWkfiXmG2AdhROUS8OnmbQtiB1UlvFPlXGL43s8Sd3xmzJxa%2B6p8414N3swlMuVbu8WdgFUff%2FaRDhDt468LLxbt7PMBO4%3D%7Ctkp%3ABk9SR8TS-8bCaA"
-  },
-  {
-   "title": "Disney Parks 2026 Christmas Tree Truck Mickey Goofy Popcorn Bucket IN HAND",
-   "price": 56.8,
-   "sold": 54,
-   "watchers": 0,
-   "link": "https://www.ebay.com/itm/960154357736?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX494AT0V11VF8VGW89M&hash=itemdf8da8cfe8:g:TD4AAeSwXg1q63zJ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde802NT3yz8KLHWcW9%2B5TqSxkvKzNGVvtLMyThxpDZ37v5o12foNAkH0KW4Xpo0Fz75F1kwr35TTJWvGUkgKajlILkJY4CDT9yU6FhXQzIrDdDTX6lyw4fPL0tBM3yWM4JgyGAk%2BilDg7I0l29h%2F4Nmoyh2uMuVbZvw%2BwR6ewnBRWo4HIzXphRS4EHFRfs%2FdHBeaVltaQIugYh7A2JCWU2xaw6pMhEAR6Pg8m1FbOv7tbRNKBRywlSMqYxX6h4f%2BwEhohbF%2BifyuaEVgND0HBEt62AV9bJJQCu6vQBUP5pX6BA%3D%3D%7Ctkp%3ABk9SR8LS-8bCaA"
+   "link": "https://www.ebay.com/itm/960154256313?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMATFBYYRXR9RVQ1R5K&hash=itemdf8da743b9:g:cmwAAeSwpVZq8P9x&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8qhBkCWW%2Bz6WGhfqWE%2B55zkE%2FHQmmmwjRFSXCWQ3o9jJ92ZBiBwrheeYU2qO1L715SzWmh1fD9fjI%2B%2ByaAH8bXjkzcoELTjF3q4kG0bFoiuVFGepR4GwXqicIKZB%2FLhmFcfweRYpC8FFaK%2BZ2pUibll2wElKduPExyPGkNdixV%2FyQGesZMN7GJT4sxf2ReAxnNuKi9IPz7LAHIfcZOqQFsfHkE6HIukcUD5ZOSRzOFNwXqz4gOGb%2BHvLxRnbWz%2FBBUfOiV6BwgMKljUIU53WGI6%2B%2FnpF8cWBaTES8GHkvJSQ%3D%3D%7Ctkp%3ABk9SR-Kq-5jDaA"
   },
   {
    "title": "Disney Parks 2026 Toy Story Gingerbread House Christmas Popcorn Bucket NEW",
    "price": 58.9,
-   "sold": 54,
+   "sold": 55,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/960164442259?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4AGVCWQ1TTTSQEGFYM&hash=itemdf8e42b093:g:i1UAAeSwgyhq7oLG&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8pbN%2F8JY0fVo5grgYKNqkgQ4%2BzsQaQB4G0npVWmzVR0uTBGgrkXoTif11snhNgXU7ihH0%2F3xzk1mSO57g1UmB6cSf5XXFe8o5Ms%2Fuv0EqwF%2BAufsHXcaPLfG94Ce%2FnNlue4QieOGE%2FBCIfgMriovm43wsIc6uJusgYCSvWISnX4ID5o4zFMIYTEEny53eMpm0Zm2otFy0om2CcDNTVJ%2B%2F1lWks5ling3zQgfo7T4pOPFatPpWa1BYCopuRgDsF1s9ZRruA2ovWDBYpNhy0%2FyIayznEpB8YNz9P4xM5q4wEjA%3D%3D%7Ctkp%3ABk9SR8TS-8bCaA"
+   "link": "https://www.ebay.com/itm/960164442259?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMAF7XBKN3G36SQTKM1&hash=itemdf8e42b093:g:i1UAAeSwgyhq7oLG&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde8Nxk5bc6glYjyDHnUNp8l%2FdHrZWKpW%2Fk9OFb8qhIShFGWy3hlMxbpEInkJ1CkADaSEWhiJMFtmeZXq30n49K0mQc%2F579jkVRmXHzijUbPgkwDWkqgVYJq8V5aPgDaIS6wb9hj0hgUr4kEx1NnCJSeB%2BZL%2FMRVRJw0CA5%2F83d303V0AR8A36L3sbur1Fo2O7KPcMoPiErMnW%2Fxp1EBfbpfy9jkdztSfxP03ayKA4MgMD%2BVepcI2wyWIAnUG3iTuW%2Fc%3D%7Ctkp%3ABk9SR-Cq-5jDaA"
   },
   {
    "title": "\ud83d\udd25Disney Parks - LIGHTNING MCQUEEN - CARS - 20TH ANNIVERSARY - Popcorn Bucket\ud83d\udca5",
    "price": 89.0,
    "sold": 43,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/137464955147?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4JJ95SVKJZZZHNAA9S&hash=item20018cc10b:g:hFcAAeSwxE5qQpxg&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8WpapH7asfplCjNSf602QS%2F5DLQ%2B58gmi6CnLl2aL5JgncKqrat9qPYZIyo49BTj7YMLMZLxUqI3OXARvQfhk5YcO2qVpsGETRbK%2BxsdtsjaJUt17CAyRqR9dp%2FKxYNBZZEpI1N6O1oQyr0%2FRykvvdIp5T6GIerROhNTpipPH%2FyKuSfdOIwHVvL2SuPW0UzvP5Pwfvgpxf0gL5jh%2ByIMgKOBR8Nmrtq7SIRE1FCARM1tH5uYSjWgjFg%2BSlAiqR%2BaTint5KQIjTB1%2BkForFxVpFBKcfwu1GWisozdqeww8Cbg%3D%3D%7Ctkp%3ABk9SR8rS-8bCaA"
+   "link": "https://www.ebay.com/itm/137464955147?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTN03RCNX5QG3SVBSX96&hash=item20018cc10b:g:hFcAAeSwxE5qQpxg&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde%2BIlbm3wmnyYhwxE2IsbUBlyVWQ71Uz5NpFCn%2B1Cf4C8C9bGxLsoGWb20MQCZwCWWT4Xl7Sa4Gv2KwxWGWltxAu7tNwTO8udqirTQ42WuHz7iIc7yvfDxCkWKEOUy8bgttg5e05SawqA4LQN6h7vL8mIa0uxKqykvXqgOz59g6ufA8%2FEa6ik0HDHWz7ED%2BgXKMhaKFPjdAAVr7GdK6Pui8dYqNQg10FJFxBR5HWiFDFx9dnoZZ16JxVLHJ06k8vZ%2BQ%3D%7Ctkp%3ABk9SR_aq-5jDaA"
   },
   {
    "title": "NEW\ud83c\udf842026 Disney Pixar Toy Story Gingerbread Christmas Popcorn Bucket",
    "price": 64.95,
    "sold": 42,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/900059901270?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4ABCP21937PJKR9PCF&hash=itemd18fc02d56:g:Np4AAeSwrV1q7hFr&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8pInBQRLU%2FSVnxtrNxUDUA8V9HAvIGE3%2Fq%2FoFq0GbxD9SNz6kobz4e%2Ffd2KmrFSPLbP47R0HzKPcWMedluxETypQaAP0ZlFiwWglK%2FIN4TWwUeG1pFrzlJ6MY03Cva1rH1mCugLkmQpRSkLns0zHwX18Qde1ZI5mf38Op%2FcjsH6xuE6FGiem1SHY2ZR%2FgeLdven6kemUlZVxVa4rTt1bcSTRcR9nCZaGQmY3BkdhnrZ8lAyyy0OP1XP6dsHO8Hf%2FyBFN%2BcSB6iSW9d1BV%2FVw43gDMrY0IeOC9Fd42NLx09OA%3D%3D%7Ctkp%3ABk9SR8LS-8bCaA"
+   "link": "https://www.ebay.com/itm/900059901270?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMAEV80Y6BPQ3XG0DA0&hash=itemd18fc02d56:g:Np4AAeSwrV1q7hFr&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8pInBQRLU%2FSVnxtrNxUDUA8V9HAvIGE3%2Fq%2FoFq0GbxD9SNz6kobz4e%2Ffd2KmrFSPLbP47R0HzKPcWMedluxETypQaAP0ZlFiwWglK%2FIN4TWwUeG1pFrzlJ6MY03Cva1rHdRl4Q%2F6FHVmXih6FIHIo5b3%2FdY2xi0VDebeThSMFyefzg8db9GVQXGZJdHNSPGL4IBwbgbEtiyYJ9Giosnvlc8WTdoYzu7QzVM%2Buuo41%2FA1DrnbTNfTX6WwRcStSnmFiT584dVY0Z0DOw462ep3nPhDuHojMNFJ8OH1EKUkEYVQ%3D%3D%7Ctkp%3ABk9SR-Kq-5jDaA"
   },
   {
    "title": "Masters of the Universe Skeletor Light Up Popcorn Bucket AMC He-MAN 2026 ships \u2b07",
    "price": 35.0,
    "sold": 42,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/327198465125?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4CJZSKCQQXS9T5V7ES&hash=item4c2e8c5c65:g:VhcAAeSw0sVqJKEq&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde90o4L7x44zUZVE0PiMpGDnuyf%2Fm1mhcfpdXsVckxUaS8zTSCf1e2R3AfFvYCOfv2egeAH7mIBFzSjx%2B8VAjCZDk2K3EWq0Is9NWNyVJwP%2BtCO8Viy26SjXso%2FoQJnCvI65TdQwn205fU%2FLwxpdZa49%2FHGaiJQaXfiyJGxm3EwJcdfLf%2F0QjhdyZHhXpejxdioiraJTQXksaGYK%2BC3Ir8Te1te69n%2B7oE4PpZ1hA39OMLT%2BxJcLE0wdyfa7SbaxZ%2B%2F9OS%2BAMw6k08dmjz5QJuKRd6CwgCNj%2B3Uet0ibgQfACQ%3D%3D%7Ctkp%3ABk9SR8bS-8bCaA"
-  },
-  {
-   "title": "NEW\ud83c\udf84Disney Parks 2026 Christmas Tree Truck Mickey Goofy Popcorn Bucket",
-   "price": 64.95,
-   "sold": 32,
-   "watchers": 0,
-   "link": "https://www.ebay.com/itm/900066205780?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4AP9J7D62A215PH9F0&hash=itemd190206054:g:lhkAAeSw8-FrAkul&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde82z1dH%2ByAJY3%2BV37aWGWR6EMK6vRf%2FkAghWiBLxwKwwd30iNAuz1vS6basur0RC5HB4c6i0h8Xib4RozCmVECGWB%2BMcsI5NrA4lB6q9FwwwrQO1vLvUV0J4uEOu3p7r6N3wTbOCdlLaACu9%2FjB70AOcacVGWZ4jw13gW6pvgNNo3Ztwl2OY4YpJJqLMVIkVuBbWXwrBOgHfhTNrnhqhIQDfQ3gg8xSauXZPhAs6sPBP7vWI9%2FzUlAiZYRvfUxmrAc%3D%7Ctkp%3ABk9SR8TS-8bCaA"
+   "link": "https://www.ebay.com/itm/327198465125?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMH546W112C6NZYNTKJ&hash=item4c2e8c5c65:g:VhcAAeSw0sVqJKEq&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde%2B0%2FVBnFfrpYr%2BmtNPZ0zpkAc5G40FjMQoGLHzhfVmqtZmpZUZOo2HijhVq6oOrJl933PQL0baC0Yx0fhek27%2FJ74aJE5lk0wZdRPYcbQQ2DbNKM0HtpTBNPM5cYZWI7ce5FgljpLN4APU7o9Rtc5IaqCOD%2BXyuoYGDIg4ky50%2FUtcE2K00dRctf8zk61cLaeOvvFtcIVys4fdjaHp9oZD7plkgUyj%2B94%2F2L5Ij00bFIIaRknKG0%2B1U8iPApGK29pc%3D%7Ctkp%3ABk9SR-iq-5jDaA"
   },
   {
    "title": "\ud83c\udfacThe Odyssey x IMAX Film Camera Popcorn Bucket 2026 Limited Edition - In-Hand\ud83c\udfa5",
    "price": 69.99,
    "sold": 26,
    "watchers": 0,
-   "link": "https://www.ebay.com/itm/127999455188?_skw=popcorn+bucket+2026&itmmeta=01M8A6YX4B2BBBWCC66C4HWJWW&hash=item1dcd5cafd4:g:2XAAAeSwUIlqaVoJ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Qx3cdaMWCRldokRJv5mIll%2Fz7Lva9BltP073lb9xz%2B1DAHrFOKfc%2FaGhUnVnBZ4Lo01rp0OgTB4C7GXvKAeu8NDCHWxS1xoT3r1TpZM5hadkIByIvvLf54IXAQ4kbRvarfD0Mi7mFQ7hTmhbyph7if%2BzK2HzTdnSfUXdOnoDqaIKYIfZio6RHU%2Fsmt4Fdlj6LwxMsW64e7yVMJaSjfNr574TSqNq7XKx%2Fyw5Gy0IFB2JA6Kn32%2BHqOft%2B5s%2FVPWcZ%2FAKHb1hkviO8aSi8hhPyVM8H3XXOAJK48xrlasoQrg%3D%3D%7Ctkp%3ABk9SR8TS-8bCaA"
+   "link": "https://www.ebay.com/itm/127999455188?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMB555345H07D3D6X4R&hash=item1dcd5cafd4:g:2XAAAeSwUIlqaVoJ&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde%2FCcL1NS9U4cJG2O55%2Ff%2Bj0hsa3Mud6lIc%2FVeNDCr2WmNKqdOTcIT1Sw2cJONOBroXGRdPEhXi9J2U18IpdW5AN04KSCpqKSePdAb8PQSF8V9OlkZu78LU42%2F7XDf3m5Q1UIKR2JxRY50C478aBqHzUe7mC72QUe%2BhqiFfr35Oj%2B06Byf8QiMj%2FfiaeUTPtPvDBRZs4fu0VL%2BgDbr5G1psTVwGhJjRpz%2Fw403eiKGWzrVdeSpj1dzHJGHpN%2BuC0i1A%3D%7Ctkp%3ABk9SR-Kq-5jDaA"
+  },
+  {
+   "title": "Practical Magic 2 Popcorn Bucket 2026 Ships Free Brand New",
+   "price": 25.0,
+   "sold": 26,
+   "watchers": 0,
+   "link": "https://www.ebay.com/itm/158207446246?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMNR3SFJ9AABY9QS6ZY&hash=item24d5e60ce6:g:c24AAeSw7SlqhOqT&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde994ZNWF4RjSF--H1q7duH2vzF3HDSfWSVvWOVsTnyvJeHOWzGRWWTznO%2F0BKP%2BHR510PEu%2FY5Jt1lJ7m1bV1ej4kDhME8qRzPu6NRO1lSBG9hjzatNS1iM9dxdAxbiog8Z33yXkGN1mPdZTFd7%2BQJzqcYwwNxcbaLrImMnC1z%2BZNdof7JwT66v3ZqcMDU5Y%2BMimlKlFl5GhIaAKfDwiwuDuusTby2MRNyqDYf0f2RMRDqccUgHOn9iKKxPNAC0pss%3D%7Ctkp%3ABk9SR-yq-5jDaA"
+  },
+  {
+   "title": "Disney Jack Skellington Nightmare Before Christmas (2026) Popcorn Bucket IN HAND",
+   "price": 39.95,
+   "sold": 0,
+   "watchers": 62,
+   "link": "https://www.ebay.com/itm/278397439369?_skw=popcorn+bucket+2026&itmmeta=01M8CRYTMHA33MZY3Y8EAN8AAD&hash=item40d1c7cd89:g:HbUAAeSw~CZqsf1~&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde9fy9bbmnOw5CZPr3z1inut79NmrfGESdO0QDWQcIikhT3bFH4NHf1F1zABvrGovZghd253wLWxwzuzz%2FRLioYlGMsAzLwgTJC4ez0gjPU1eOlGcZIjVcxWmeaGiOwT%2B1OUvCWBRiBifUWWQyjm7CDjDndrI4pTtE4f2zQZ6XzisLlZtzfGKB6%2FTBzgJ7zf%2BwzVDBZtjNcbEnJQv2eM2jkMr8jBywJGpZtT77V1nmQbYnk2vJOGY9DgLRkj1uHape8%3D%7Ctkp%3ABk9SR-iq-5jDaA"
   }
  ],
  "trends": [
   {
    "q": "dune popcorn bucket",
-   "current": 6.6,
-   "change_pct": -4,
+   "current": 6.7,
+   "change_pct": -2,
    "series": [
-    0,
-    3,
-    0,
+    4,
     0,
     0,
     0,
     0,
     0,
     0,
-    3,
     0,
     0,
-    0,
+    2,
     0,
     0,
     0,
     3,
-    60,
+    0,
+    4,
+    61,
     100,
-    51,
-    27,
+    52,
+    26,
     19,
-    14,
     15,
-    11,
-    10,
-    14,
+    15,
+    13,
+    12,
+    15,
     14,
     9,
     8,
-    8,
+    6,
     7,
     7,
-    8,
-    8,
+    9,
+    7,
+    7,
     6,
     6,
     6,
-    6,
-    6,
+    7,
     8,
     8,
     7,
+    6,
     6,
     5
    ]
   },
   {
    "q": "doomsday popcorn bucket",
-   "current": 5.9,
-   "change_pct": 25,
+   "current": 6.3,
+   "change_pct": 26,
    "series": [
     0,
     0,
@@ -708,27 +718,26 @@
     0,
     0,
     0,
-    0,
-    18,
+    19,
     20,
+    8,
+    8,
+    4,
+    3,
+    3,
     6,
+    5,
+    5,
     6,
     4,
     3,
-    4,
-    5,
-    5,
-    4,
-    5,
-    3,
     3,
     5,
-    5,
     4,
     5,
     5,
     4,
-    4,
+    5,
     6,
     6,
     5,
@@ -736,13 +745,14 @@
     5,
     8,
     7,
-    5
+    7,
+    7
    ]
   },
   {
    "q": "hunger games popcorn bucket",
-   "current": 10.6,
-   "change_pct": 147,
+   "current": 9.0,
+   "change_pct": 43,
    "series": [
     0,
     0,
@@ -759,28 +769,27 @@
     0,
     0,
     0,
+    4,
+    2,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     4,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     3,
-    0,
-    0,
+    3,
     2,
-    2,
-    2,
+    3,
     3,
     3,
     4,
-    5,
+    6,
     11,
     14,
     18,
@@ -788,48 +797,48 @@
     11,
     6,
     4,
-    3
+    4,
+    2
    ]
   },
   {
    "q": "godzilla popcorn bucket",
-   "current": 5.1,
-   "change_pct": -56,
+   "current": 4.7,
+   "change_pct": -54,
    "series": [
+    7,
+    9,
     10,
     7,
-    11,
-    11,
-    8,
-    11,
-    8,
-    5,
+    12,
+    9,
+    7,
+    6,
     7,
     7,
-    8,
-    6,
-    6,
+    7,
+    5,
     11,
-    4,
     5,
-    5,
-    13,
+    6,
+    6,
+    14,
     20,
     12,
     10,
-    16,
-    37,
-    66,
-    61,
-    87,
+    15,
+    38,
+    67,
+    63,
+    89,
     81,
-    60,
-    30,
-    26,
-    22,
+    58,
+    31,
+    25,
+    23,
+    17,
+    15,
     16,
-    15,
-    15,
     13,
     8,
     7,
@@ -840,7 +849,8 @@
     6,
     5,
     4,
-    4
+    4,
+    3
    ]
   },
   {
@@ -855,36 +865,36 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
     0,
     2,
     3,
-    5,
-    3,
+    4,
+    6,
+    4,
     4,
     0,
     0,
-    2,
+    0,
     1,
     1,
     1,
     1,
     1,
     1,
+    0,
     0,
     0,
     0,
