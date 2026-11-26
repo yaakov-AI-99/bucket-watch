@@ -107,7 +107,7 @@ td a{color:var(--stripe);font-weight:600;text-decoration:none}
 .flip a{color:var(--stripe);font-weight:600;font-size:13px;text-decoration:none}
 h3.minor{font-family:var(--display);font-size:1.1rem;margin:28px 0 10px}
 h3.minor + .sub{margin-top:-6px}
-.refresh{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 12px}
+.refresh{margin-top:16px!important;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 12px}
 .rbtn{font:600 14px var(--body);background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
 .rbtn[disabled]{opacity:.6;cursor:progress}
 .rlink{font:600 13px var(--body);color:var(--stripe);text-decoration:none}
@@ -168,6 +168,12 @@ h3.minor + .sub{margin-top:-6px}
     <span class="updated">Bucket details can change before release.</span>
   </div>
 
+  <div class="refresh" id="refresh-box">
+    <button class="rbtn" id="refresh-btn" type="button">↻ Refresh</button>
+    <a class="rlink" id="pull-link" href="https://github.com/yaakov-AI-99/bucket-watch/actions/workflows/update-data.yml" target="_blank" rel="noopener">Pull new eBay prices now ↗</a>
+    <span class="rstatus" id="refresh-status" role="status" aria-live="polite">Loading prices…</span>
+  </div>
+
   <h2>Coming up</h2>
   <p class="sub">Ranked by buzz: how many chains carry a bucket, how much coverage it got, and how past buckets for the series sold. The buzz rating is my estimate, not an official number.</p>
   <div class="movies" id="upcoming"></div>
@@ -178,11 +184,6 @@ h3.minor + .sub{margin-top:-6px}
 
   <h2 id="resale">Resale outlook</h2>
   <p class="sub">Buckets ranked by expected profit each, from live eBay listings. Where buckets have actually sold, the sell price comes from those sales. Where they haven't yet, it's 80% of the typical asking price, since asking prices run higher than what sells. What you pay at the theater is my estimate until prices are announced.</p>
-  <div class="refresh" id="refresh-box">
-    <button class="rbtn" id="refresh-btn" type="button">↻ Refresh</button>
-    <a class="rlink" id="pull-link" href="https://github.com/yaakov-AI-99/bucket-watch/actions/workflows/update-data.yml" target="_blank" rel="noopener">Pull new eBay prices now ↗</a>
-    <span class="rstatus" id="refresh-status" role="status" aria-live="polite">Loading prices…</span>
-  </div>
   <div class="livebar" id="live-status" hidden></div>
   <div class="flips" id="flips"></div>
 
