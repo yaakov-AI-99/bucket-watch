@@ -107,6 +107,16 @@ td a{color:var(--stripe);font-weight:600;text-decoration:none}
 .flip a{color:var(--stripe);font-weight:600;font-size:13px;text-decoration:none}
 h3.minor{font-family:var(--display);font-size:1.1rem;margin:28px 0 10px}
 h3.minor + .sub{margin-top:-6px}
+.refresh{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 12px}
+.rbtn{font:600 14px var(--body);background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+.rbtn[disabled]{opacity:.6;cursor:progress}
+.rlink{font:600 13px var(--body);color:var(--stripe);text-decoration:none}
+.rlink:hover{text-decoration:underline}
+.rbtn:focus-visible,.rlink:focus-visible{outline:3px solid var(--butter);outline-offset:2px}
+.rstatus{font-size:13px;color:var(--muted);flex:1 1 220px;min-width:0}
+.rstatus b{color:var(--ink)}
+.rstatus.wait b{color:var(--warn)}
+.rstatus.ok b{color:var(--ok)}
 .livebar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:13px;color:var(--muted);margin:0 0 12px}
 .livebar .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;margin-right:6px}
 .stats{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:6px}
@@ -168,6 +178,11 @@ h3.minor + .sub{margin-top:-6px}
 
   <h2 id="resale">Resale outlook</h2>
   <p class="sub">Buckets ranked by expected profit each, from live eBay listings. Where buckets have actually sold, the sell price comes from those sales. Where they haven't yet, it's 80% of the typical asking price, since asking prices run higher than what sells. What you pay at the theater is my estimate until prices are announced.</p>
+  <div class="refresh" id="refresh-box">
+    <button class="rbtn" id="refresh-btn" type="button">↻ Refresh</button>
+    <a class="rlink" id="pull-link" href="https://github.com/yaakov-AI-99/bucket-watch/actions/workflows/update-data.yml" target="_blank" rel="noopener">Pull new eBay prices now ↗</a>
+    <span class="rstatus" id="refresh-status" role="status" aria-live="polite">Loading prices…</span>
+  </div>
   <div class="livebar" id="live-status" hidden></div>
   <div class="flips" id="flips"></div>
 
@@ -440,7 +455,55 @@ function renderLive(d){
   $("#hot").innerHTML = (d.hot||[]).map(h=>`<tr><td><a href="${safeUrl(h.link)}" target="_blank" rel="noopener">${esc(h.title)}</a></td><td class="mono">${money(h.price)}</td><td class="mono">${h.sold||"–"}</td><td class="mono">${h.watchers||"–"}</td></tr>`).join("") || `<tr><td colspan="4" class="none">No listings with sales or watchers yet.</td></tr>`;
   $("#live-extra").hidden = false;
 }
-fetch("data.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{ if(d&&d.items) renderLive(d); }).catch(()=>{});
+// ---- Refresh ----
+// GitHub Pages caches files for up to 10 minutes, so add a unique query string to always get the newest data.json.
+let lastUpdated = null, pollTimer = null, pollStop = 0;
+function stopPoll(){ clearInterval(pollTimer); pollTimer = null; }
+function ago(iso){
+  const m = Math.round((Date.now()-new Date(iso))/60000);
+  if(m<1) return "just now";
+  if(m<60) return m+" min ago";
+  const h = Math.round(m/60);
+  if(h<48) return h+" hour"+(h===1?"":"s")+" ago";
+  return Math.round(h/24)+" days ago";
+}
+function setStatus(html, cls){ const el=$("#refresh-status"); el.innerHTML=html; el.className="rstatus"+(cls?" "+cls:""); }
+async function loadData(){
+  const r = await fetch("data.json?t="+Date.now(), {cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  const d = await r.json();
+  if(d && d.items) renderLive(d);
+  return d;
+}
+function showAge(){ if(lastUpdated) setStatus(`eBay prices from <b>${ago(lastUpdated)}</b> · checked ${new Date().toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit"})}`); }
+async function refresh(){
+  const b=$("#refresh-btn"); b.disabled=true; setStatus("Checking for the newest prices…");
+  try{
+    const d = await loadData();
+    const isNew = lastUpdated && d.updated!==lastUpdated;
+    lastUpdated = d.updated;
+    if(isNew) setStatus(`<b>New prices loaded</b> (from ${ago(d.updated)})`, "ok"); else showAge();
+  }catch(e){ setStatus("Couldn't load prices. Check your connection and tap Refresh again.", "wait"); }
+  b.disabled=false;
+}
+function waitForNewData(){
+  // After "Pull new eBay prices now", watch for the new data for up to 12 minutes.
+  const startedWith = lastUpdated;
+  pollStop = Date.now()+12*60000;
+  stopPoll();
+  setStatus("<b>Getting new eBay prices…</b> In the GitHub tab, click <b>Run workflow</b>. New prices show up here by themselves, usually in 2–4 minutes.", "wait");
+  pollTimer = setInterval(async()=>{
+    try{
+      const d = await loadData();
+      if(d.updated!==startedWith){ lastUpdated=d.updated; stopPoll(); setStatus("<b>New prices loaded</b> (just now)", "ok"); return; }
+    }catch(e){}
+    if(Date.now()>pollStop){ stopPoll(); setStatus("<b>No new prices yet.</b> Make sure you clicked Run workflow on GitHub, then tap Refresh in a few minutes.", "wait"); }
+  }, 30000);
+}
+$("#refresh-btn").addEventListener("click", refresh);
+$("#pull-link").addEventListener("click", waitForNewData);
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden && !pollTimer) refresh(); else if(!document.hidden) showAge(); });
+refresh();
 
 $("#comps").innerHTML = COMPS.map(c=>`<tr><td>${c.b}</td><td class="mono">${c.r}</td><td class="mono">${c.s}</td><td class="mono">${c.x}</td><td>${c.t}</td></tr>`).join("");
 
